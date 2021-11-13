@@ -1,11 +1,11 @@
 # Robot Manipulator (ARM) project
 
 ## Done by:
-* Shevchuk Bohdan https://github.com/shevdan
+* [Shevchuk Bohdan](https://github.com/shevdan)
  
-* Brovchenko Yaroslav https://github.com/firstgenius
+* [Brovchenko Yaroslav](https://github.com/firstgenius)
 
-* Kuzmina Daria https://github.com/ivddorrka
+* [Kuzmina Daria](https://github.com/ivddorrka)
 
 ## Tech Parts
 
