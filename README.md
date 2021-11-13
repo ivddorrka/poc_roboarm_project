@@ -40,4 +40,5 @@
 
 > There's a short video how it looks like 
 
-![caption](img/video_mute.gif)
+[![Watch the video](img/system.jpg)](https://www.youtube.com/watch?v=cE127sNU3uk)
+
