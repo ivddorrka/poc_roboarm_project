@@ -46,14 +46,14 @@
 
 ## Future steps to be taken 
 
-> We're making a program and hardware to be able to make a robo-manipulator arm run specific algorithm. Firstly we'll proceed working with stepper motors 
+> We're making a program and hardware to be able to make a robo-manipulator arm run specific algorithm. Firstly we'll proceed working with other motors, dc motors, which are being used inside this arm manipulator
 > One of the first steps is providing control of the robot manipulator by transmitting instructions to the PSoC4200 microcontroller.
 
 > Now we have a small totally mechanic robot-manipulator, which is being controlled from the remote controll which is connected to it. Before constructing our own more powerful robohand, we will run algorithms on this small robot manipulator.
 
 ![Screenshot](img/full_size.jpg)
 
-> If we look at which parts this robot consists of, we'll see that the main work of moving is being done by the stepper motors, so the algorithm should be using these stepper motors one by one, making them rotate the arm in the needed direction. Such algorith can make this arm a perfect helper for everyday. 
+> If we look at which parts this robot consists of, we'll see that the main work of moving is being done by the dc motors, so the algorithm should be using these  motors one by one, making them rotate the arm in the needed direction. Such algorith can make this arm a perfect helper for everyday. 
 
 * Components of the robot:
 
