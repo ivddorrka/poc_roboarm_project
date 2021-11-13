@@ -40,9 +40,8 @@
 
 > There's a short video how it looks like 
 * CLICK ON THE PICTURE, SO YOU'LL BE REDIRECTED TO YOUTUBE 
-
-[![Watch the video](img/system.jpg)](https://www.youtube.com/watch?v=cE127sNU3uk)
-
+> (here it firstly rotates 360 degree on the one side and then 90 degree back)
+[![Watch the video](img/system.jpg)](https://www.youtube.com/watch?v=qU8eceOCC08)
 
 
 ## Future steps to be taken 
