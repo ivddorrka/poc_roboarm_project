@@ -1,86 +1,53 @@
 #include "project.h"
-#include "math.h"
+#include <math.h>
 
-int forward_direction(int delay, double angle){
-    int num_iter = round(512 * angle/360);
-    for (int i = 0; i <num_iter; ++i){
-        A_Write(1);
-        B_Write(0);
-        C_Write(0);
-        D_Write(0);
-        CyDelay(delay);
-        
-        A_Write(0);
-        B_Write(1);
-        C_Write(0);
-        D_Write(0);
-        CyDelay(delay);        
-        
-        
-                
-        A_Write(0);
-        B_Write(0);
-        C_Write(1);
-        D_Write(0);
-        CyDelay(delay); 
-        
-                
-        A_Write(0);
-        B_Write(0);
-        C_Write(0);
-        D_Write(1);
-        CyDelay(delay); 
+void pin_info(int direction, int curr_pin){
+    int arr[4] = {0, 0, 0, 0};
+    for (int i = 0; i < 4; ++i){
+        if (i == curr_pin)
+            arr[i] = 1;
+        else
+            arr[i] = 0;
     }
-    return 0;
+    if (direction == 1){
+        A_Write(arr[0]);
+        B_Write(arr[1]);
+        C_Write(arr[2]);
+        D_Write(arr[3]);
+    }
+    else{
+        A_Write(arr[3]);
+        B_Write(arr[2]);
+        C_Write(arr[1]);
+        D_Write(arr[0]);
+    }
 }
 
-int backward_direction(int delay, double angle){
+
+void forward_direction(int delay, double angle, int direction){
     int num_iter = round(512 * angle/360);
     for (int i = 0; i < num_iter; ++i){
-        A_Write(0);
-        B_Write(0);
-        C_Write(0);
-        D_Write(1);
-        CyDelay(delay);
-        
-        A_Write(0);
-        B_Write(0);
-        C_Write(1);
-        D_Write(0);
-        CyDelay(delay);        
-        
-        
-                
-        A_Write(0);
-        B_Write(1);
-        C_Write(0);
-        D_Write(0);
-        CyDelay(delay); 
-        
-                
-        A_Write(1);
-        B_Write(0);
-        C_Write(0);
-        D_Write(0);
-        CyDelay(delay); 
+        for (int j = 0; j < 4; ++j){
+            pin_info(direction, j);
+            CyDelay(delay);
+        }
     }
-    return 0;
 }
-
 
 int main(void)
 {
     CyGlobalIntEnable;
 
     
-    float velocity = 0.5; //desired motor speed in rpm
     int delay;
-    int direction = -1; //backwards (cw/ outer clockwise)
+    int direction = 1; //backwards (cw/ outer clockwise)
     
-    float angle = 90.0; //desired angle turn in degrees;
+    float angle = 360.0; //desired angle turn in degrees;
     
     delay = 3;
-    forward_direction(delay, 90.0);
+    forward_direction(delay, angle, direction);
+    direction = -1;
     CyDelay(1000);
-    backward_direction(delay, 90.0);
+    angle = 90.0;
+    forward_direction(delay, angle, direction);
 }
