@@ -40,5 +40,4 @@
 
 > There's a short video how it looks like 
 
-<video src='https://www.youtube.com/watch?v=cE127sNU3uk' width=180/>
-
+![caption](img/video_mute.gif)
