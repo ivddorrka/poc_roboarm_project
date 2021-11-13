@@ -39,6 +39,31 @@
 > Running this code will make motor will move 90 degree outer clockwise (direction = 1) and then after a short delay 90 degree clockwise (direction = -1)
 
 > There's a short video how it looks like 
+* CLICK ON THE PICTURE, SO YOU'LL BE REDIRECTED TO YOUTUBE 
 
 [![Watch the video](img/system.jpg)](https://www.youtube.com/watch?v=cE127sNU3uk)
+
+
+
+## Future steps to be taken 
+
+> We're making a program and hardware to be able to make a robo-manipulator arm run specific algorithm. Firstly we'll proceed working with stepper motors 
+> One of the first steps is providing control of the robot manipulator by transmitting instructions to the PSoC4200 microcontroller.
+
+> We have a totally mechanic robot-manipulator, which is being controlled from the remote controll which is connected to it.
+
+![Screenshot](img/full_size.jpg)
+
+> If we look at which parts this robot consists of, we'll see that the main work of moving is being done by the stepper motors, so the algorithm should be using these stepper motors one by one, making them rotate the arm in the needed direction. Such algorith can make this arm a perfect helper for everyday. 
+
+* The part:
+
+![Screenshot](img/parts.jpg)
+
+* Where some of this motors are being located at:
+
+![Screenshot](img/blocks.jpg)
+![Screenshot](img/arm_upper.jpg)
+
+> As soon as we'll get it done, we'll proceed working with the big robot manipulator, which is way bigger that this try-one and able to pick up things up to 4-5 kg. The big one arm is being constructed at the moment. 
 
