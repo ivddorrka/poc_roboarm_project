@@ -55,7 +55,7 @@
 
 > If we look at which parts this robot consists of, we'll see that the main work of moving is being done by the stepper motors, so the algorithm should be using these stepper motors one by one, making them rotate the arm in the needed direction. Such algorith can make this arm a perfect helper for everyday. 
 
-* The part:
+* Components of the robot:
 
 ![Screenshot](img/parts.jpg)
 
@@ -64,5 +64,5 @@
 ![Screenshot](img/blocks.jpg)
 ![Screenshot](img/arm_upper.jpg)
 
-> As soon as we'll get it done, we'll proceed working with the big robot manipulator, which is way bigger that this try-one and able to pick up things up to 4-5 kg. The big one arm is being constructed at the moment. 
+> As soon as we'll get it done, we'll proceed working with the big robot manipulator, which is way bigger than this try-one and able to pick up things up to 4-5 kg. The big one arm is being constructed at the moment. 
 
