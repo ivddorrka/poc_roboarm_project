@@ -38,4 +38,7 @@
 
 > Running this code will make motor will move 90 degree outer clockwise (direction = 1) and then after a short delay 90 degree clockwise (direction = -1)
 
+> There's a short video how it looks like 
+
+<video src='https://www.youtube.com/watch?v=cE127sNU3uk' width=180/>
 
