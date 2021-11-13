@@ -49,7 +49,7 @@
 > We're making a program and hardware to be able to make a robo-manipulator arm run specific algorithm. Firstly we'll proceed working with stepper motors 
 > One of the first steps is providing control of the robot manipulator by transmitting instructions to the PSoC4200 microcontroller.
 
-> We have a totally mechanic robot-manipulator, which is being controlled from the remote controll which is connected to it.
+> Now we have a small totally mechanic robot-manipulator, which is being controlled from the remote controll which is connected to it. Before constructing our own more powerful robohand, we will run algorithms on this small robot manipulator.
 
 ![Screenshot](img/full_size.jpg)
 
