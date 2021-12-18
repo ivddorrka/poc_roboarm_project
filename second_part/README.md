@@ -14,5 +14,5 @@ Last time we've worked with sepper motors, however we have a robo-arm with DC-mo
 
 * Whole look of everything now
 
-![Screenshot](whole.png)
+![Screenshot](./img/whole.png)
 
