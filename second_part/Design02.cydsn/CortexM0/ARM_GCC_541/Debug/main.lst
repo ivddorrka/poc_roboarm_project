@@ -1,0 +1,2418 @@
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.control_direction,"ax",%progbits
+  20              		.align	2
+  21              		.global	control_direction
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	control_direction, %function
+  25              	control_direction:
+  26              	.LFB35:
+  27              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main.c        ****  * All Rights Reserved
+   5:main.c        ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main.c        ****  *
+   7:main.c        ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main.c        ****  * WHICH IS THE PROPERTY OF your company.
+   9:main.c        ****  *
+  10:main.c        ****  * ========================================
+  11:main.c        **** */
+  12:main.c        **** #include "project.h"
+  13:main.c        **** 
+  14:main.c        **** //void stop(int
+  15:main.c        **** void control_direction(int speed_percent, int direction, int num_servo) {
+  28              		.loc 1 15 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              	.LVL0:
+  33 0000 10B5     		push	{r4, lr}
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 4, -8
+  36              		.cfi_offset 14, -4
+  37              	.LVL1:
+  16:main.c        ****     uint8 pin_val = 0;
+  17:main.c        ****     if (direction == 0) {
+  38              		.loc 1 17 0
+  39 0002 0029     		cmp	r1, #0
+  40 0004 03D1     		bne	.L7
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 2
+
+
+  18:main.c        ****         speed_percent = 100 - speed_percent;
+  41              		.loc 1 18 0
+  42 0006 6423     		movs	r3, #100
+  43 0008 181A     		subs	r0, r3, r0
+  44              	.LVL2:
+  19:main.c        ****         pin_val = 1;
+  45              		.loc 1 19 0
+  46 000a 0124     		movs	r4, #1
+  47 000c 00E0     		b	.L2
+  48              	.LVL3:
+  49              	.L7:
+  16:main.c        ****     uint8 pin_val = 0;
+  50              		.loc 1 16 0
+  51 000e 0024     		movs	r4, #0
+  52              	.LVL4:
+  53              	.L2:
+  20:main.c        ****     }
+  21:main.c        ****     
+  22:main.c        ****     if (num_servo == 1) {
+  54              		.loc 1 22 0
+  55 0010 012A     		cmp	r2, #1
+  56 0012 05D1     		bne	.L3
+  23:main.c        ****         PWM_1_WriteCompare(speed_percent);
+  57              		.loc 1 23 0
+  58 0014 FFF7FEFF 		bl	PWM_1_WriteCompare
+  59              	.LVL5:
+  24:main.c        ****         Pin_pair01_Write(pin_val);
+  60              		.loc 1 24 0
+  61 0018 2000     		movs	r0, r4
+  62 001a FFF7FEFF 		bl	Pin_pair01_Write
+  63              	.LVL6:
+  64 001e 16E0     		b	.L1
+  65              	.LVL7:
+  66              	.L3:
+  25:main.c        ****     }
+  26:main.c        ****     
+  27:main.c        ****     else if (num_servo == 2) {
+  67              		.loc 1 27 0
+  68 0020 022A     		cmp	r2, #2
+  69 0022 05D1     		bne	.L5
+  28:main.c        ****         PWM_2_WriteCompare(speed_percent);
+  70              		.loc 1 28 0
+  71 0024 FFF7FEFF 		bl	PWM_2_WriteCompare
+  72              	.LVL8:
+  29:main.c        ****         Pin_pair02_Write(pin_val);
+  73              		.loc 1 29 0
+  74 0028 2000     		movs	r0, r4
+  75 002a FFF7FEFF 		bl	Pin_pair02_Write
+  76              	.LVL9:
+  77 002e 0EE0     		b	.L1
+  78              	.LVL10:
+  79              	.L5:
+  30:main.c        ****     }
+  31:main.c        ****     
+  32:main.c        ****     else if (num_servo == 3) {
+  80              		.loc 1 32 0
+  81 0030 032A     		cmp	r2, #3
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 3
+
+
+  82 0032 05D1     		bne	.L6
+  33:main.c        ****         PWM_3_WriteCompare(speed_percent);
+  83              		.loc 1 33 0
+  84 0034 FFF7FEFF 		bl	PWM_3_WriteCompare
+  85              	.LVL11:
+  34:main.c        ****         Pin_pair03_Write(pin_val);
+  86              		.loc 1 34 0
+  87 0038 2000     		movs	r0, r4
+  88 003a FFF7FEFF 		bl	Pin_pair03_Write
+  89              	.LVL12:
+  90 003e 06E0     		b	.L1
+  91              	.LVL13:
+  92              	.L6:
+  35:main.c        ****     }
+  36:main.c        ****     
+  37:main.c        ****     else if (num_servo == 4) {
+  93              		.loc 1 37 0
+  94 0040 042A     		cmp	r2, #4
+  95 0042 04D1     		bne	.L1
+  38:main.c        ****         PWM_4_WriteCompare(speed_percent);
+  96              		.loc 1 38 0
+  97 0044 FFF7FEFF 		bl	PWM_4_WriteCompare
+  98              	.LVL14:
+  39:main.c        ****         Pin_pair04_Write(pin_val);
+  99              		.loc 1 39 0
+ 100 0048 2000     		movs	r0, r4
+ 101 004a FFF7FEFF 		bl	Pin_pair04_Write
+ 102              	.LVL15:
+ 103              	.L1:
+  40:main.c        ****     }    
+  41:main.c        **** }
+ 104              		.loc 1 41 0
+ 105              		@ sp needed
+ 106              	.LVL16:
+ 107 004e 10BD     		pop	{r4, pc}
+ 108              		.cfi_endproc
+ 109              	.LFE35:
+ 110              		.size	control_direction, .-control_direction
+ 111              		.section	.text.move_servo,"ax",%progbits
+ 112              		.align	2
+ 113              		.global	move_servo
+ 114              		.code	16
+ 115              		.thumb_func
+ 116              		.type	move_servo, %function
+ 117              	move_servo:
+ 118              	.LFB36:
+  42:main.c        **** 
+  43:main.c        **** void move_servo(uint32 time_to_work, uint32 break_time, int speed, int direction,  int num_servo) {
+ 119              		.loc 1 43 0
+ 120              		.cfi_startproc
+ 121              		@ args = 4, pretend = 0, frame = 0
+ 122              		@ frame_needed = 0, uses_anonymous_args = 0
+ 123              	.LVL17:
+ 124 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 125              		.cfi_def_cfa_offset 24
+ 126              		.cfi_offset 3, -24
+ 127              		.cfi_offset 4, -20
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 4
+
+
+ 128              		.cfi_offset 5, -16
+ 129              		.cfi_offset 6, -12
+ 130              		.cfi_offset 7, -8
+ 131              		.cfi_offset 14, -4
+ 132 0002 0600     		movs	r6, r0
+ 133 0004 0D00     		movs	r5, r1
+ 134 0006 1700     		movs	r7, r2
+ 135 0008 1C00     		movs	r4, r3
+  44:main.c        ****     control_direction(30, direction, num_servo);
+ 136              		.loc 1 44 0
+ 137 000a 069A     		ldr	r2, [sp, #24]
+ 138              	.LVL18:
+ 139 000c 1900     		movs	r1, r3
+ 140              	.LVL19:
+ 141 000e 1E20     		movs	r0, #30
+ 142              	.LVL20:
+ 143 0010 FFF7FEFF 		bl	control_direction
+ 144              	.LVL21:
+  45:main.c        ****     CyDelay(10);
+ 145              		.loc 1 45 0
+ 146 0014 0A20     		movs	r0, #10
+ 147 0016 FFF7FEFF 		bl	CyDelay
+ 148              	.LVL22:
+  46:main.c        ****     
+  47:main.c        ****     control_direction(speed, direction, num_servo);
+ 149              		.loc 1 47 0
+ 150 001a 069A     		ldr	r2, [sp, #24]
+ 151 001c 2100     		movs	r1, r4
+ 152 001e 3800     		movs	r0, r7
+ 153 0020 FFF7FEFF 		bl	control_direction
+ 154              	.LVL23:
+  48:main.c        ****     CyDelay(time_to_work);
+ 155              		.loc 1 48 0
+ 156 0024 3000     		movs	r0, r6
+ 157 0026 FFF7FEFF 		bl	CyDelay
+ 158              	.LVL24:
+  49:main.c        ****     
+  50:main.c        ****     control_direction(0, direction, num_servo);
+ 159              		.loc 1 50 0
+ 160 002a 069A     		ldr	r2, [sp, #24]
+ 161 002c 2100     		movs	r1, r4
+ 162 002e 0020     		movs	r0, #0
+ 163 0030 FFF7FEFF 		bl	control_direction
+ 164              	.LVL25:
+  51:main.c        ****     CyDelay(break_time);
+ 165              		.loc 1 51 0
+ 166 0034 2800     		movs	r0, r5
+ 167 0036 FFF7FEFF 		bl	CyDelay
+ 168              	.LVL26:
+  52:main.c        **** }
+ 169              		.loc 1 52 0
+ 170              		@ sp needed
+ 171              	.LVL27:
+ 172              	.LVL28:
+ 173              	.LVL29:
+ 174              	.LVL30:
+ 175 003a F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 5
+
+
+ 176              		.cfi_endproc
+ 177              	.LFE36:
+ 178              		.size	move_servo, .-move_servo
+ 179              		.section	.text.main,"ax",%progbits
+ 180              		.align	2
+ 181              		.global	main
+ 182              		.code	16
+ 183              		.thumb_func
+ 184              		.type	main, %function
+ 185              	main:
+ 186              	.LFB37:
+  53:main.c        **** 
+  54:main.c        **** int main(void)
+  55:main.c        **** {
+ 187              		.loc 1 55 0
+ 188              		.cfi_startproc
+ 189              		@ Volatile: function does not return.
+ 190              		@ args = 0, pretend = 0, frame = 0
+ 191              		@ frame_needed = 0, uses_anonymous_args = 0
+ 192 0000 10B5     		push	{r4, lr}
+ 193              		.cfi_def_cfa_offset 8
+ 194              		.cfi_offset 4, -8
+ 195              		.cfi_offset 14, -4
+  56:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+ 196              		.loc 1 56 0
+ 197              		.syntax divided
+ 198              	@ 56 "main.c" 1
+ 199 0002 62B6     		CPSIE   i
+ 200              	@ 0 "" 2
+  57:main.c        ****     
+  58:main.c        ****     PWM_1_Start();
+ 201              		.loc 1 58 0
+ 202              		.thumb
+ 203              		.syntax unified
+ 204 0004 FFF7FEFF 		bl	PWM_1_Start
+ 205              	.LVL31:
+  59:main.c        ****     PWM_2_Start();
+ 206              		.loc 1 59 0
+ 207 0008 FFF7FEFF 		bl	PWM_2_Start
+ 208              	.LVL32:
+  60:main.c        ****     PWM_3_Start();
+ 209              		.loc 1 60 0
+ 210 000c FFF7FEFF 		bl	PWM_3_Start
+ 211              	.LVL33:
+  61:main.c        ****     PWM_4_Start();
+ 212              		.loc 1 61 0
+ 213 0010 FFF7FEFF 		bl	PWM_4_Start
+ 214              	.LVL34:
+  62:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  63:main.c        ****     //PWM_2_Start();
+  64:main.c        ****     
+  65:main.c        ****     //int cmp = 70;
+  66:main.c        ****       
+  67:main.c        ****     control_direction(30, 1, 1);
+ 215              		.loc 1 67 0
+ 216 0014 0122     		movs	r2, #1
+ 217 0016 0121     		movs	r1, #1
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 6
+
+
+ 218 0018 1E20     		movs	r0, #30
+ 219 001a FFF7FEFF 		bl	control_direction
+ 220              	.LVL35:
+  68:main.c        ****     control_direction(30, 1, 2);
+ 221              		.loc 1 68 0
+ 222 001e 0222     		movs	r2, #2
+ 223 0020 0121     		movs	r1, #1
+ 224 0022 1E20     		movs	r0, #30
+ 225 0024 FFF7FEFF 		bl	control_direction
+ 226              	.LVL36:
+  69:main.c        ****     control_direction(30, 1, 3);
+ 227              		.loc 1 69 0
+ 228 0028 0322     		movs	r2, #3
+ 229 002a 0121     		movs	r1, #1
+ 230 002c 1E20     		movs	r0, #30
+ 231 002e FFF7FEFF 		bl	control_direction
+ 232              	.LVL37:
+  70:main.c        ****     control_direction(30, 1, 4);
+ 233              		.loc 1 70 0
+ 234 0032 0422     		movs	r2, #4
+ 235 0034 0121     		movs	r1, #1
+ 236 0036 1E20     		movs	r0, #30
+ 237 0038 FFF7FEFF 		bl	control_direction
+ 238              	.LVL38:
+  71:main.c        ****     CyDelay(10);
+ 239              		.loc 1 71 0
+ 240 003c 0A20     		movs	r0, #10
+ 241 003e FFF7FEFF 		bl	CyDelay
+ 242              	.LVL39:
+ 243              	.L10:
+  72:main.c        ****     for(;;)
+  73:main.c        ****     {
+  74:main.c        ****        //Pin_Green_Write(Pin_SW2_Read());
+  75:main.c        ****        
+  76:main.c        ****         //move_servo(500, 500, 10, 1, 1);
+  77:main.c        ****         
+  78:main.c        ****         //move_servo(500, 500, 20, 0, 2);
+  79:main.c        ****         
+  80:main.c        ****         //move_servo(1000, 500, 30, 1, 3);
+  81:main.c        ****         
+  82:main.c        ****         //move_servo(2000, 500, 10, 0, 4);
+  83:main.c        ****         
+  84:main.c        ****         
+  85:main.c        ****         
+  86:main.c        ****         //move_servo(500, 500, 10, 0, 1);
+  87:main.c        ****         
+  88:main.c        ****         //move_servo(500, 500, 20, 1, 2);
+  89:main.c        ****         
+  90:main.c        ****         //move_servo(1000, 500, 30, 0, 3);
+  91:main.c        ****         
+  92:main.c        ****         //move_servo(2000, 500, 10, 1, 4);
+  93:main.c        ****         
+  94:main.c        ****     
+  95:main.c        ****     
+  96:main.c        ****         
+  97:main.c        ****         //PWM_1_WriteCompare(cmp);
+  98:main.c        ****         //Pin_1_Write(1);
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 7
+
+
+  99:main.c        ****         //Pin_2_Write(0);
+ 100:main.c        ****         //CyDelay(3000);
+ 101:main.c        ****       
+ 102:main.c        ****       
+ 103:main.c        **** 
+ 104:main.c        ****         control_direction(20, 1, 1);
+ 244              		.loc 1 104 0 discriminator 1
+ 245 0042 0122     		movs	r2, #1
+ 246 0044 0121     		movs	r1, #1
+ 247 0046 1420     		movs	r0, #20
+ 248 0048 FFF7FEFF 		bl	control_direction
+ 249              	.LVL40:
+ 105:main.c        ****         control_direction(20, 1, 2);
+ 250              		.loc 1 105 0 discriminator 1
+ 251 004c 0222     		movs	r2, #2
+ 252 004e 0121     		movs	r1, #1
+ 253 0050 1420     		movs	r0, #20
+ 254 0052 FFF7FEFF 		bl	control_direction
+ 255              	.LVL41:
+ 106:main.c        ****         control_direction(20, 1, 3);
+ 256              		.loc 1 106 0 discriminator 1
+ 257 0056 0322     		movs	r2, #3
+ 258 0058 0121     		movs	r1, #1
+ 259 005a 1420     		movs	r0, #20
+ 260 005c FFF7FEFF 		bl	control_direction
+ 261              	.LVL42:
+ 107:main.c        ****         control_direction(20, 1, 4);
+ 262              		.loc 1 107 0 discriminator 1
+ 263 0060 0422     		movs	r2, #4
+ 264 0062 0121     		movs	r1, #1
+ 265 0064 1420     		movs	r0, #20
+ 266 0066 FFF7FEFF 		bl	control_direction
+ 267              	.LVL43:
+ 108:main.c        ****         
+ 109:main.c        ****         CyDelay(1000);
+ 268              		.loc 1 109 0 discriminator 1
+ 269 006a FA24     		movs	r4, #250
+ 270 006c A400     		lsls	r4, r4, #2
+ 271 006e 2000     		movs	r0, r4
+ 272 0070 FFF7FEFF 		bl	CyDelay
+ 273              	.LVL44:
+ 110:main.c        ****         
+ 111:main.c        ****         control_direction(0, 1, 1);
+ 274              		.loc 1 111 0 discriminator 1
+ 275 0074 0122     		movs	r2, #1
+ 276 0076 0121     		movs	r1, #1
+ 277 0078 0020     		movs	r0, #0
+ 278 007a FFF7FEFF 		bl	control_direction
+ 279              	.LVL45:
+ 112:main.c        ****         control_direction(0, 1, 2);
+ 280              		.loc 1 112 0 discriminator 1
+ 281 007e 0222     		movs	r2, #2
+ 282 0080 0121     		movs	r1, #1
+ 283 0082 0020     		movs	r0, #0
+ 284 0084 FFF7FEFF 		bl	control_direction
+ 285              	.LVL46:
+ 113:main.c        ****         control_direction(0, 1, 3);
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 8
+
+
+ 286              		.loc 1 113 0 discriminator 1
+ 287 0088 0322     		movs	r2, #3
+ 288 008a 0121     		movs	r1, #1
+ 289 008c 0020     		movs	r0, #0
+ 290 008e FFF7FEFF 		bl	control_direction
+ 291              	.LVL47:
+ 114:main.c        ****         control_direction(0, 1, 4);
+ 292              		.loc 1 114 0 discriminator 1
+ 293 0092 0422     		movs	r2, #4
+ 294 0094 0121     		movs	r1, #1
+ 295 0096 0020     		movs	r0, #0
+ 296 0098 FFF7FEFF 		bl	control_direction
+ 297              	.LVL48:
+ 115:main.c        ****         
+ 116:main.c        ****         CyDelay(3000);
+ 298              		.loc 1 116 0 discriminator 1
+ 299 009c 2F48     		ldr	r0, .L11
+ 300 009e FFF7FEFF 		bl	CyDelay
+ 301              	.LVL49:
+ 117:main.c        ****           
+ 118:main.c        ****         control_direction(30, 0, 1);
+ 302              		.loc 1 118 0 discriminator 1
+ 303 00a2 0122     		movs	r2, #1
+ 304 00a4 0021     		movs	r1, #0
+ 305 00a6 1E20     		movs	r0, #30
+ 306 00a8 FFF7FEFF 		bl	control_direction
+ 307              	.LVL50:
+ 119:main.c        ****         control_direction(30, 0, 2);
+ 308              		.loc 1 119 0 discriminator 1
+ 309 00ac 0222     		movs	r2, #2
+ 310 00ae 0021     		movs	r1, #0
+ 311 00b0 1E20     		movs	r0, #30
+ 312 00b2 FFF7FEFF 		bl	control_direction
+ 313              	.LVL51:
+ 120:main.c        ****         control_direction(30, 0, 3);
+ 314              		.loc 1 120 0 discriminator 1
+ 315 00b6 0322     		movs	r2, #3
+ 316 00b8 0021     		movs	r1, #0
+ 317 00ba 1E20     		movs	r0, #30
+ 318 00bc FFF7FEFF 		bl	control_direction
+ 319              	.LVL52:
+ 121:main.c        ****         control_direction(30, 0, 4);
+ 320              		.loc 1 121 0 discriminator 1
+ 321 00c0 0422     		movs	r2, #4
+ 322 00c2 0021     		movs	r1, #0
+ 323 00c4 1E20     		movs	r0, #30
+ 324 00c6 FFF7FEFF 		bl	control_direction
+ 325              	.LVL53:
+ 122:main.c        ****         
+ 123:main.c        ****         
+ 124:main.c        ****         CyDelay(10);
+ 326              		.loc 1 124 0 discriminator 1
+ 327 00ca 0A20     		movs	r0, #10
+ 328 00cc FFF7FEFF 		bl	CyDelay
+ 329              	.LVL54:
+ 125:main.c        ****         
+ 126:main.c        ****         control_direction(20, 0, 1);
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 9
+
+
+ 330              		.loc 1 126 0 discriminator 1
+ 331 00d0 0122     		movs	r2, #1
+ 332 00d2 0021     		movs	r1, #0
+ 333 00d4 1420     		movs	r0, #20
+ 334 00d6 FFF7FEFF 		bl	control_direction
+ 335              	.LVL55:
+ 127:main.c        ****         control_direction(20, 0, 2);
+ 336              		.loc 1 127 0 discriminator 1
+ 337 00da 0222     		movs	r2, #2
+ 338 00dc 0021     		movs	r1, #0
+ 339 00de 1420     		movs	r0, #20
+ 340 00e0 FFF7FEFF 		bl	control_direction
+ 341              	.LVL56:
+ 128:main.c        ****         control_direction(20, 0, 3);
+ 342              		.loc 1 128 0 discriminator 1
+ 343 00e4 0322     		movs	r2, #3
+ 344 00e6 0021     		movs	r1, #0
+ 345 00e8 1420     		movs	r0, #20
+ 346 00ea FFF7FEFF 		bl	control_direction
+ 347              	.LVL57:
+ 129:main.c        ****         control_direction(20, 0, 4);
+ 348              		.loc 1 129 0 discriminator 1
+ 349 00ee 0422     		movs	r2, #4
+ 350 00f0 0021     		movs	r1, #0
+ 351 00f2 1420     		movs	r0, #20
+ 352 00f4 FFF7FEFF 		bl	control_direction
+ 353              	.LVL58:
+ 130:main.c        ****         
+ 131:main.c        ****         CyDelay(1000);
+ 354              		.loc 1 131 0 discriminator 1
+ 355 00f8 2000     		movs	r0, r4
+ 356 00fa FFF7FEFF 		bl	CyDelay
+ 357              	.LVL59:
+ 132:main.c        ****         
+ 133:main.c        ****         control_direction(0, 0, 1);
+ 358              		.loc 1 133 0 discriminator 1
+ 359 00fe 0122     		movs	r2, #1
+ 360 0100 0021     		movs	r1, #0
+ 361 0102 0020     		movs	r0, #0
+ 362 0104 FFF7FEFF 		bl	control_direction
+ 363              	.LVL60:
+ 134:main.c        ****         control_direction(0, 0, 2);
+ 364              		.loc 1 134 0 discriminator 1
+ 365 0108 0222     		movs	r2, #2
+ 366 010a 0021     		movs	r1, #0
+ 367 010c 0020     		movs	r0, #0
+ 368 010e FFF7FEFF 		bl	control_direction
+ 369              	.LVL61:
+ 135:main.c        ****         control_direction(0, 0, 3);
+ 370              		.loc 1 135 0 discriminator 1
+ 371 0112 0322     		movs	r2, #3
+ 372 0114 0021     		movs	r1, #0
+ 373 0116 0020     		movs	r0, #0
+ 374 0118 FFF7FEFF 		bl	control_direction
+ 375              	.LVL62:
+ 136:main.c        ****         control_direction(0, 0, 4);
+ 376              		.loc 1 136 0 discriminator 1
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 10
+
+
+ 377 011c 0422     		movs	r2, #4
+ 378 011e 0021     		movs	r1, #0
+ 379 0120 0020     		movs	r0, #0
+ 380 0122 FFF7FEFF 		bl	control_direction
+ 381              	.LVL63:
+ 137:main.c        ****         
+ 138:main.c        ****         CyDelay(5000);
+ 382              		.loc 1 138 0 discriminator 1
+ 383 0126 0E48     		ldr	r0, .L11+4
+ 384 0128 FFF7FEFF 		bl	CyDelay
+ 385              	.LVL64:
+ 139:main.c        ****         
+ 140:main.c        ****         control_direction(30, 1, 1);
+ 386              		.loc 1 140 0 discriminator 1
+ 387 012c 0122     		movs	r2, #1
+ 388 012e 0121     		movs	r1, #1
+ 389 0130 1E20     		movs	r0, #30
+ 390 0132 FFF7FEFF 		bl	control_direction
+ 391              	.LVL65:
+ 141:main.c        ****         control_direction(30, 1, 2);
+ 392              		.loc 1 141 0 discriminator 1
+ 393 0136 0222     		movs	r2, #2
+ 394 0138 0121     		movs	r1, #1
+ 395 013a 1E20     		movs	r0, #30
+ 396 013c FFF7FEFF 		bl	control_direction
+ 397              	.LVL66:
+ 142:main.c        ****         control_direction(30, 1, 3);
+ 398              		.loc 1 142 0 discriminator 1
+ 399 0140 0322     		movs	r2, #3
+ 400 0142 0121     		movs	r1, #1
+ 401 0144 1E20     		movs	r0, #30
+ 402 0146 FFF7FEFF 		bl	control_direction
+ 403              	.LVL67:
+ 143:main.c        ****         control_direction(30, 1, 4);
+ 404              		.loc 1 143 0 discriminator 1
+ 405 014a 0422     		movs	r2, #4
+ 406 014c 0121     		movs	r1, #1
+ 407 014e 1E20     		movs	r0, #30
+ 408 0150 FFF7FEFF 		bl	control_direction
+ 409              	.LVL68:
+ 144:main.c        ****         
+ 145:main.c        ****         CyDelay(10);
+ 410              		.loc 1 145 0 discriminator 1
+ 411 0154 0A20     		movs	r0, #10
+ 412 0156 FFF7FEFF 		bl	CyDelay
+ 413              	.LVL69:
+ 414 015a 72E7     		b	.L10
+ 415              	.L12:
+ 416              		.align	2
+ 417              	.L11:
+ 418 015c B80B0000 		.word	3000
+ 419 0160 88130000 		.word	5000
+ 420              		.cfi_endproc
+ 421              	.LFE37:
+ 422              		.size	main, .-main
+ 423              		.text
+ 424              	.Letext0:
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 11
+
+
+ 425              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 426              		.file 3 "Generated_Source\\PSoC4/PWM_1.h"
+ 427              		.file 4 "Generated_Source\\PSoC4/Pin_pair01.h"
+ 428              		.file 5 "Generated_Source\\PSoC4/PWM_2.h"
+ 429              		.file 6 "Generated_Source\\PSoC4/Pin_pair02.h"
+ 430              		.file 7 "Generated_Source\\PSoC4/PWM_3.h"
+ 431              		.file 8 "Generated_Source\\PSoC4/Pin_pair03.h"
+ 432              		.file 9 "Generated_Source\\PSoC4/PWM_4.h"
+ 433              		.file 10 "Generated_Source\\PSoC4/Pin_pair04.h"
+ 434              		.file 11 "Generated_Source\\PSoC4/CyLib.h"
+ 435              		.section	.debug_info,"",%progbits
+ 436              	.Ldebug_info0:
+ 437 0000 E5060000 		.4byte	0x6e5
+ 438 0004 0400     		.2byte	0x4
+ 439 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 440 000a 04       		.byte	0x4
+ 441 000b 01       		.uleb128 0x1
+ 442 000c 7D010000 		.4byte	.LASF37
+ 443 0010 0C       		.byte	0xc
+ 444 0011 9B020000 		.4byte	.LASF38
+ 445 0015 52000000 		.4byte	.LASF39
+ 446 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 447 001d 00000000 		.4byte	0
+ 448 0021 00000000 		.4byte	.Ldebug_line0
+ 449 0025 02       		.uleb128 0x2
+ 450 0026 01       		.byte	0x1
+ 451 0027 06       		.byte	0x6
+ 452 0028 7D020000 		.4byte	.LASF0
+ 453 002c 02       		.uleb128 0x2
+ 454 002d 01       		.byte	0x1
+ 455 002e 08       		.byte	0x8
+ 456 002f CB000000 		.4byte	.LASF1
+ 457 0033 02       		.uleb128 0x2
+ 458 0034 02       		.byte	0x2
+ 459 0035 05       		.byte	0x5
+ 460 0036 53020000 		.4byte	.LASF2
+ 461 003a 02       		.uleb128 0x2
+ 462 003b 02       		.byte	0x2
+ 463 003c 07       		.byte	0x7
+ 464 003d 3F000000 		.4byte	.LASF3
+ 465 0041 02       		.uleb128 0x2
+ 466 0042 04       		.byte	0x4
+ 467 0043 05       		.byte	0x5
+ 468 0044 68020000 		.4byte	.LASF4
+ 469 0048 02       		.uleb128 0x2
+ 470 0049 04       		.byte	0x4
+ 471 004a 07       		.byte	0x7
+ 472 004b EA000000 		.4byte	.LASF5
+ 473 004f 02       		.uleb128 0x2
+ 474 0050 08       		.byte	0x8
+ 475 0051 05       		.byte	0x5
+ 476 0052 2D020000 		.4byte	.LASF6
+ 477 0056 02       		.uleb128 0x2
+ 478 0057 08       		.byte	0x8
+ 479 0058 07       		.byte	0x7
+ 480 0059 5A010000 		.4byte	.LASF7
+ 481 005d 03       		.uleb128 0x3
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 12
+
+
+ 482 005e 04       		.byte	0x4
+ 483 005f 05       		.byte	0x5
+ 484 0060 696E7400 		.ascii	"int\000"
+ 485 0064 02       		.uleb128 0x2
+ 486 0065 04       		.byte	0x4
+ 487 0066 07       		.byte	0x7
+ 488 0067 4D010000 		.4byte	.LASF8
+ 489 006b 04       		.uleb128 0x4
+ 490 006c FC000000 		.4byte	.LASF9
+ 491 0070 02       		.byte	0x2
+ 492 0071 FB01     		.2byte	0x1fb
+ 493 0073 2C000000 		.4byte	0x2c
+ 494 0077 04       		.uleb128 0x4
+ 495 0078 27010000 		.4byte	.LASF10
+ 496 007c 02       		.byte	0x2
+ 497 007d FD01     		.2byte	0x1fd
+ 498 007f 48000000 		.4byte	0x48
+ 499 0083 02       		.uleb128 0x2
+ 500 0084 04       		.byte	0x4
+ 501 0085 04       		.byte	0x4
+ 502 0086 C5000000 		.4byte	.LASF11
+ 503 008a 02       		.uleb128 0x2
+ 504 008b 08       		.byte	0x8
+ 505 008c 04       		.byte	0x4
+ 506 008d 02010000 		.4byte	.LASF12
+ 507 0091 02       		.uleb128 0x2
+ 508 0092 01       		.byte	0x1
+ 509 0093 08       		.byte	0x8
+ 510 0094 4E020000 		.4byte	.LASF13
+ 511 0098 02       		.uleb128 0x2
+ 512 0099 08       		.byte	0x8
+ 513 009a 04       		.byte	0x4
+ 514 009b 71020000 		.4byte	.LASF14
+ 515 009f 02       		.uleb128 0x2
+ 516 00a0 04       		.byte	0x4
+ 517 00a1 07       		.byte	0x7
+ 518 00a2 11020000 		.4byte	.LASF15
+ 519 00a6 05       		.uleb128 0x5
+ 520 00a7 89020000 		.4byte	.LASF19
+ 521 00ab 01       		.byte	0x1
+ 522 00ac 0F       		.byte	0xf
+ 523 00ad 00000000 		.4byte	.LFB35
+ 524 00b1 50000000 		.4byte	.LFE35-.LFB35
+ 525 00b5 01       		.uleb128 0x1
+ 526 00b6 9C       		.byte	0x9c
+ 527 00b7 68010000 		.4byte	0x168
+ 528 00bb 06       		.uleb128 0x6
+ 529 00bc B7000000 		.4byte	.LASF16
+ 530 00c0 01       		.byte	0x1
+ 531 00c1 0F       		.byte	0xf
+ 532 00c2 5D000000 		.4byte	0x5d
+ 533 00c6 00000000 		.4byte	.LLST0
+ 534 00ca 06       		.uleb128 0x6
+ 535 00cb 81000000 		.4byte	.LASF17
+ 536 00cf 01       		.byte	0x1
+ 537 00d0 0F       		.byte	0xf
+ 538 00d1 5D000000 		.4byte	0x5d
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 13
+
+
+ 539 00d5 3F000000 		.4byte	.LLST1
+ 540 00d9 06       		.uleb128 0x6
+ 541 00da 11000000 		.4byte	.LASF18
+ 542 00de 01       		.byte	0x1
+ 543 00df 0F       		.byte	0xf
+ 544 00e0 5D000000 		.4byte	0x5d
+ 545 00e4 AB000000 		.4byte	.LLST2
+ 546 00e8 07       		.uleb128 0x7
+ 547 00e9 37000000 		.4byte	.LASF40
+ 548 00ed 01       		.byte	0x1
+ 549 00ee 10       		.byte	0x10
+ 550 00ef 6B000000 		.4byte	0x6b
+ 551 00f3 17010000 		.4byte	.LLST3
+ 552 00f7 08       		.uleb128 0x8
+ 553 00f8 18000000 		.4byte	.LVL5
+ 554 00fc 51060000 		.4byte	0x651
+ 555 0100 09       		.uleb128 0x9
+ 556 0101 1E000000 		.4byte	.LVL6
+ 557 0105 5D060000 		.4byte	0x65d
+ 558 0109 14010000 		.4byte	0x114
+ 559 010d 0A       		.uleb128 0xa
+ 560 010e 01       		.uleb128 0x1
+ 561 010f 50       		.byte	0x50
+ 562 0110 02       		.uleb128 0x2
+ 563 0111 74       		.byte	0x74
+ 564 0112 00       		.sleb128 0
+ 565 0113 00       		.byte	0
+ 566 0114 08       		.uleb128 0x8
+ 567 0115 28000000 		.4byte	.LVL8
+ 568 0119 68060000 		.4byte	0x668
+ 569 011d 09       		.uleb128 0x9
+ 570 011e 2E000000 		.4byte	.LVL9
+ 571 0122 74060000 		.4byte	0x674
+ 572 0126 31010000 		.4byte	0x131
+ 573 012a 0A       		.uleb128 0xa
+ 574 012b 01       		.uleb128 0x1
+ 575 012c 50       		.byte	0x50
+ 576 012d 02       		.uleb128 0x2
+ 577 012e 74       		.byte	0x74
+ 578 012f 00       		.sleb128 0
+ 579 0130 00       		.byte	0
+ 580 0131 08       		.uleb128 0x8
+ 581 0132 38000000 		.4byte	.LVL11
+ 582 0136 7F060000 		.4byte	0x67f
+ 583 013a 09       		.uleb128 0x9
+ 584 013b 3E000000 		.4byte	.LVL12
+ 585 013f 8B060000 		.4byte	0x68b
+ 586 0143 4E010000 		.4byte	0x14e
+ 587 0147 0A       		.uleb128 0xa
+ 588 0148 01       		.uleb128 0x1
+ 589 0149 50       		.byte	0x50
+ 590 014a 02       		.uleb128 0x2
+ 591 014b 74       		.byte	0x74
+ 592 014c 00       		.sleb128 0
+ 593 014d 00       		.byte	0
+ 594 014e 08       		.uleb128 0x8
+ 595 014f 48000000 		.4byte	.LVL14
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 14
+
+
+ 596 0153 96060000 		.4byte	0x696
+ 597 0157 0B       		.uleb128 0xb
+ 598 0158 4E000000 		.4byte	.LVL15
+ 599 015c A2060000 		.4byte	0x6a2
+ 600 0160 0A       		.uleb128 0xa
+ 601 0161 01       		.uleb128 0x1
+ 602 0162 50       		.byte	0x50
+ 603 0163 02       		.uleb128 0x2
+ 604 0164 74       		.byte	0x74
+ 605 0165 00       		.sleb128 0
+ 606 0166 00       		.byte	0
+ 607 0167 00       		.byte	0
+ 608 0168 05       		.uleb128 0x5
+ 609 0169 1B000000 		.4byte	.LASF20
+ 610 016d 01       		.byte	0x1
+ 611 016e 2B       		.byte	0x2b
+ 612 016f 00000000 		.4byte	.LFB36
+ 613 0173 3C000000 		.4byte	.LFE36-.LFB36
+ 614 0177 01       		.uleb128 0x1
+ 615 0178 9C       		.byte	0x9c
+ 616 0179 60020000 		.4byte	0x260
+ 617 017d 06       		.uleb128 0x6
+ 618 017e 15010000 		.4byte	.LASF21
+ 619 0182 01       		.byte	0x1
+ 620 0183 2B       		.byte	0x2b
+ 621 0184 77000000 		.4byte	0x77
+ 622 0188 4E010000 		.4byte	.LLST4
+ 623 018c 06       		.uleb128 0x6
+ 624 018d 5D020000 		.4byte	.LASF22
+ 625 0191 01       		.byte	0x1
+ 626 0192 2B       		.byte	0x2b
+ 627 0193 77000000 		.4byte	0x77
+ 628 0197 7A010000 		.4byte	.LLST5
+ 629 019b 06       		.uleb128 0x6
+ 630 019c 0B020000 		.4byte	.LASF23
+ 631 01a0 01       		.byte	0x1
+ 632 01a1 2B       		.byte	0x2b
+ 633 01a2 5D000000 		.4byte	0x5d
+ 634 01a6 A6010000 		.4byte	.LLST6
+ 635 01aa 06       		.uleb128 0x6
+ 636 01ab 81000000 		.4byte	.LASF17
+ 637 01af 01       		.byte	0x1
+ 638 01b0 2B       		.byte	0x2b
+ 639 01b1 5D000000 		.4byte	0x5d
+ 640 01b5 D2010000 		.4byte	.LLST7
+ 641 01b9 0C       		.uleb128 0xc
+ 642 01ba 11000000 		.4byte	.LASF18
+ 643 01be 01       		.byte	0x1
+ 644 01bf 2B       		.byte	0x2b
+ 645 01c0 5D000000 		.4byte	0x5d
+ 646 01c4 02       		.uleb128 0x2
+ 647 01c5 91       		.byte	0x91
+ 648 01c6 00       		.sleb128 0
+ 649 01c7 09       		.uleb128 0x9
+ 650 01c8 14000000 		.4byte	.LVL21
+ 651 01cc A6000000 		.4byte	0xa6
+ 652 01d0 E7010000 		.4byte	0x1e7
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 15
+
+
+ 653 01d4 0A       		.uleb128 0xa
+ 654 01d5 01       		.uleb128 0x1
+ 655 01d6 50       		.byte	0x50
+ 656 01d7 01       		.uleb128 0x1
+ 657 01d8 4E       		.byte	0x4e
+ 658 01d9 0A       		.uleb128 0xa
+ 659 01da 01       		.uleb128 0x1
+ 660 01db 51       		.byte	0x51
+ 661 01dc 02       		.uleb128 0x2
+ 662 01dd 74       		.byte	0x74
+ 663 01de 00       		.sleb128 0
+ 664 01df 0A       		.uleb128 0xa
+ 665 01e0 01       		.uleb128 0x1
+ 666 01e1 52       		.byte	0x52
+ 667 01e2 03       		.uleb128 0x3
+ 668 01e3 91       		.byte	0x91
+ 669 01e4 00       		.sleb128 0
+ 670 01e5 06       		.byte	0x6
+ 671 01e6 00       		.byte	0
+ 672 01e7 09       		.uleb128 0x9
+ 673 01e8 1A000000 		.4byte	.LVL22
+ 674 01ec AD060000 		.4byte	0x6ad
+ 675 01f0 FA010000 		.4byte	0x1fa
+ 676 01f4 0A       		.uleb128 0xa
+ 677 01f5 01       		.uleb128 0x1
+ 678 01f6 50       		.byte	0x50
+ 679 01f7 01       		.uleb128 0x1
+ 680 01f8 3A       		.byte	0x3a
+ 681 01f9 00       		.byte	0
+ 682 01fa 09       		.uleb128 0x9
+ 683 01fb 24000000 		.4byte	.LVL23
+ 684 01ff A6000000 		.4byte	0xa6
+ 685 0203 1B020000 		.4byte	0x21b
+ 686 0207 0A       		.uleb128 0xa
+ 687 0208 01       		.uleb128 0x1
+ 688 0209 50       		.byte	0x50
+ 689 020a 02       		.uleb128 0x2
+ 690 020b 77       		.byte	0x77
+ 691 020c 00       		.sleb128 0
+ 692 020d 0A       		.uleb128 0xa
+ 693 020e 01       		.uleb128 0x1
+ 694 020f 51       		.byte	0x51
+ 695 0210 02       		.uleb128 0x2
+ 696 0211 74       		.byte	0x74
+ 697 0212 00       		.sleb128 0
+ 698 0213 0A       		.uleb128 0xa
+ 699 0214 01       		.uleb128 0x1
+ 700 0215 52       		.byte	0x52
+ 701 0216 03       		.uleb128 0x3
+ 702 0217 91       		.byte	0x91
+ 703 0218 00       		.sleb128 0
+ 704 0219 06       		.byte	0x6
+ 705 021a 00       		.byte	0
+ 706 021b 09       		.uleb128 0x9
+ 707 021c 2A000000 		.4byte	.LVL24
+ 708 0220 AD060000 		.4byte	0x6ad
+ 709 0224 2F020000 		.4byte	0x22f
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 16
+
+
+ 710 0228 0A       		.uleb128 0xa
+ 711 0229 01       		.uleb128 0x1
+ 712 022a 50       		.byte	0x50
+ 713 022b 02       		.uleb128 0x2
+ 714 022c 76       		.byte	0x76
+ 715 022d 00       		.sleb128 0
+ 716 022e 00       		.byte	0
+ 717 022f 09       		.uleb128 0x9
+ 718 0230 34000000 		.4byte	.LVL25
+ 719 0234 A6000000 		.4byte	0xa6
+ 720 0238 4F020000 		.4byte	0x24f
+ 721 023c 0A       		.uleb128 0xa
+ 722 023d 01       		.uleb128 0x1
+ 723 023e 50       		.byte	0x50
+ 724 023f 01       		.uleb128 0x1
+ 725 0240 30       		.byte	0x30
+ 726 0241 0A       		.uleb128 0xa
+ 727 0242 01       		.uleb128 0x1
+ 728 0243 51       		.byte	0x51
+ 729 0244 02       		.uleb128 0x2
+ 730 0245 74       		.byte	0x74
+ 731 0246 00       		.sleb128 0
+ 732 0247 0A       		.uleb128 0xa
+ 733 0248 01       		.uleb128 0x1
+ 734 0249 52       		.byte	0x52
+ 735 024a 03       		.uleb128 0x3
+ 736 024b 91       		.byte	0x91
+ 737 024c 00       		.sleb128 0
+ 738 024d 06       		.byte	0x6
+ 739 024e 00       		.byte	0
+ 740 024f 0B       		.uleb128 0xb
+ 741 0250 3A000000 		.4byte	.LVL26
+ 742 0254 AD060000 		.4byte	0x6ad
+ 743 0258 0A       		.uleb128 0xa
+ 744 0259 01       		.uleb128 0x1
+ 745 025a 50       		.byte	0x50
+ 746 025b 02       		.uleb128 0x2
+ 747 025c 75       		.byte	0x75
+ 748 025d 00       		.sleb128 0
+ 749 025e 00       		.byte	0
+ 750 025f 00       		.byte	0
+ 751 0260 0D       		.uleb128 0xd
+ 752 0261 22010000 		.4byte	.LASF41
+ 753 0265 01       		.byte	0x1
+ 754 0266 36       		.byte	0x36
+ 755 0267 5D000000 		.4byte	0x5d
+ 756 026b 00000000 		.4byte	.LFB37
+ 757 026f 64010000 		.4byte	.LFE37-.LFB37
+ 758 0273 01       		.uleb128 0x1
+ 759 0274 9C       		.byte	0x9c
+ 760 0275 51060000 		.4byte	0x651
+ 761 0279 08       		.uleb128 0x8
+ 762 027a 08000000 		.4byte	.LVL31
+ 763 027e B8060000 		.4byte	0x6b8
+ 764 0282 08       		.uleb128 0x8
+ 765 0283 0C000000 		.4byte	.LVL32
+ 766 0287 C4060000 		.4byte	0x6c4
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 17
+
+
+ 767 028b 08       		.uleb128 0x8
+ 768 028c 10000000 		.4byte	.LVL33
+ 769 0290 D0060000 		.4byte	0x6d0
+ 770 0294 08       		.uleb128 0x8
+ 771 0295 14000000 		.4byte	.LVL34
+ 772 0299 DC060000 		.4byte	0x6dc
+ 773 029d 09       		.uleb128 0x9
+ 774 029e 1E000000 		.4byte	.LVL35
+ 775 02a2 A6000000 		.4byte	0xa6
+ 776 02a6 BA020000 		.4byte	0x2ba
+ 777 02aa 0A       		.uleb128 0xa
+ 778 02ab 01       		.uleb128 0x1
+ 779 02ac 50       		.byte	0x50
+ 780 02ad 01       		.uleb128 0x1
+ 781 02ae 4E       		.byte	0x4e
+ 782 02af 0A       		.uleb128 0xa
+ 783 02b0 01       		.uleb128 0x1
+ 784 02b1 51       		.byte	0x51
+ 785 02b2 01       		.uleb128 0x1
+ 786 02b3 31       		.byte	0x31
+ 787 02b4 0A       		.uleb128 0xa
+ 788 02b5 01       		.uleb128 0x1
+ 789 02b6 52       		.byte	0x52
+ 790 02b7 01       		.uleb128 0x1
+ 791 02b8 31       		.byte	0x31
+ 792 02b9 00       		.byte	0
+ 793 02ba 09       		.uleb128 0x9
+ 794 02bb 28000000 		.4byte	.LVL36
+ 795 02bf A6000000 		.4byte	0xa6
+ 796 02c3 D7020000 		.4byte	0x2d7
+ 797 02c7 0A       		.uleb128 0xa
+ 798 02c8 01       		.uleb128 0x1
+ 799 02c9 50       		.byte	0x50
+ 800 02ca 01       		.uleb128 0x1
+ 801 02cb 4E       		.byte	0x4e
+ 802 02cc 0A       		.uleb128 0xa
+ 803 02cd 01       		.uleb128 0x1
+ 804 02ce 51       		.byte	0x51
+ 805 02cf 01       		.uleb128 0x1
+ 806 02d0 31       		.byte	0x31
+ 807 02d1 0A       		.uleb128 0xa
+ 808 02d2 01       		.uleb128 0x1
+ 809 02d3 52       		.byte	0x52
+ 810 02d4 01       		.uleb128 0x1
+ 811 02d5 32       		.byte	0x32
+ 812 02d6 00       		.byte	0
+ 813 02d7 09       		.uleb128 0x9
+ 814 02d8 32000000 		.4byte	.LVL37
+ 815 02dc A6000000 		.4byte	0xa6
+ 816 02e0 F4020000 		.4byte	0x2f4
+ 817 02e4 0A       		.uleb128 0xa
+ 818 02e5 01       		.uleb128 0x1
+ 819 02e6 50       		.byte	0x50
+ 820 02e7 01       		.uleb128 0x1
+ 821 02e8 4E       		.byte	0x4e
+ 822 02e9 0A       		.uleb128 0xa
+ 823 02ea 01       		.uleb128 0x1
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 18
+
+
+ 824 02eb 51       		.byte	0x51
+ 825 02ec 01       		.uleb128 0x1
+ 826 02ed 31       		.byte	0x31
+ 827 02ee 0A       		.uleb128 0xa
+ 828 02ef 01       		.uleb128 0x1
+ 829 02f0 52       		.byte	0x52
+ 830 02f1 01       		.uleb128 0x1
+ 831 02f2 33       		.byte	0x33
+ 832 02f3 00       		.byte	0
+ 833 02f4 09       		.uleb128 0x9
+ 834 02f5 3C000000 		.4byte	.LVL38
+ 835 02f9 A6000000 		.4byte	0xa6
+ 836 02fd 11030000 		.4byte	0x311
+ 837 0301 0A       		.uleb128 0xa
+ 838 0302 01       		.uleb128 0x1
+ 839 0303 50       		.byte	0x50
+ 840 0304 01       		.uleb128 0x1
+ 841 0305 4E       		.byte	0x4e
+ 842 0306 0A       		.uleb128 0xa
+ 843 0307 01       		.uleb128 0x1
+ 844 0308 51       		.byte	0x51
+ 845 0309 01       		.uleb128 0x1
+ 846 030a 31       		.byte	0x31
+ 847 030b 0A       		.uleb128 0xa
+ 848 030c 01       		.uleb128 0x1
+ 849 030d 52       		.byte	0x52
+ 850 030e 01       		.uleb128 0x1
+ 851 030f 34       		.byte	0x34
+ 852 0310 00       		.byte	0
+ 853 0311 09       		.uleb128 0x9
+ 854 0312 42000000 		.4byte	.LVL39
+ 855 0316 AD060000 		.4byte	0x6ad
+ 856 031a 24030000 		.4byte	0x324
+ 857 031e 0A       		.uleb128 0xa
+ 858 031f 01       		.uleb128 0x1
+ 859 0320 50       		.byte	0x50
+ 860 0321 01       		.uleb128 0x1
+ 861 0322 3A       		.byte	0x3a
+ 862 0323 00       		.byte	0
+ 863 0324 09       		.uleb128 0x9
+ 864 0325 4C000000 		.4byte	.LVL40
+ 865 0329 A6000000 		.4byte	0xa6
+ 866 032d 41030000 		.4byte	0x341
+ 867 0331 0A       		.uleb128 0xa
+ 868 0332 01       		.uleb128 0x1
+ 869 0333 50       		.byte	0x50
+ 870 0334 01       		.uleb128 0x1
+ 871 0335 44       		.byte	0x44
+ 872 0336 0A       		.uleb128 0xa
+ 873 0337 01       		.uleb128 0x1
+ 874 0338 51       		.byte	0x51
+ 875 0339 01       		.uleb128 0x1
+ 876 033a 31       		.byte	0x31
+ 877 033b 0A       		.uleb128 0xa
+ 878 033c 01       		.uleb128 0x1
+ 879 033d 52       		.byte	0x52
+ 880 033e 01       		.uleb128 0x1
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 19
+
+
+ 881 033f 31       		.byte	0x31
+ 882 0340 00       		.byte	0
+ 883 0341 09       		.uleb128 0x9
+ 884 0342 56000000 		.4byte	.LVL41
+ 885 0346 A6000000 		.4byte	0xa6
+ 886 034a 5E030000 		.4byte	0x35e
+ 887 034e 0A       		.uleb128 0xa
+ 888 034f 01       		.uleb128 0x1
+ 889 0350 50       		.byte	0x50
+ 890 0351 01       		.uleb128 0x1
+ 891 0352 44       		.byte	0x44
+ 892 0353 0A       		.uleb128 0xa
+ 893 0354 01       		.uleb128 0x1
+ 894 0355 51       		.byte	0x51
+ 895 0356 01       		.uleb128 0x1
+ 896 0357 31       		.byte	0x31
+ 897 0358 0A       		.uleb128 0xa
+ 898 0359 01       		.uleb128 0x1
+ 899 035a 52       		.byte	0x52
+ 900 035b 01       		.uleb128 0x1
+ 901 035c 32       		.byte	0x32
+ 902 035d 00       		.byte	0
+ 903 035e 09       		.uleb128 0x9
+ 904 035f 60000000 		.4byte	.LVL42
+ 905 0363 A6000000 		.4byte	0xa6
+ 906 0367 7B030000 		.4byte	0x37b
+ 907 036b 0A       		.uleb128 0xa
+ 908 036c 01       		.uleb128 0x1
+ 909 036d 50       		.byte	0x50
+ 910 036e 01       		.uleb128 0x1
+ 911 036f 44       		.byte	0x44
+ 912 0370 0A       		.uleb128 0xa
+ 913 0371 01       		.uleb128 0x1
+ 914 0372 51       		.byte	0x51
+ 915 0373 01       		.uleb128 0x1
+ 916 0374 31       		.byte	0x31
+ 917 0375 0A       		.uleb128 0xa
+ 918 0376 01       		.uleb128 0x1
+ 919 0377 52       		.byte	0x52
+ 920 0378 01       		.uleb128 0x1
+ 921 0379 33       		.byte	0x33
+ 922 037a 00       		.byte	0
+ 923 037b 09       		.uleb128 0x9
+ 924 037c 6A000000 		.4byte	.LVL43
+ 925 0380 A6000000 		.4byte	0xa6
+ 926 0384 98030000 		.4byte	0x398
+ 927 0388 0A       		.uleb128 0xa
+ 928 0389 01       		.uleb128 0x1
+ 929 038a 50       		.byte	0x50
+ 930 038b 01       		.uleb128 0x1
+ 931 038c 44       		.byte	0x44
+ 932 038d 0A       		.uleb128 0xa
+ 933 038e 01       		.uleb128 0x1
+ 934 038f 51       		.byte	0x51
+ 935 0390 01       		.uleb128 0x1
+ 936 0391 31       		.byte	0x31
+ 937 0392 0A       		.uleb128 0xa
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 20
+
+
+ 938 0393 01       		.uleb128 0x1
+ 939 0394 52       		.byte	0x52
+ 940 0395 01       		.uleb128 0x1
+ 941 0396 34       		.byte	0x34
+ 942 0397 00       		.byte	0
+ 943 0398 09       		.uleb128 0x9
+ 944 0399 74000000 		.4byte	.LVL44
+ 945 039d AD060000 		.4byte	0x6ad
+ 946 03a1 AC030000 		.4byte	0x3ac
+ 947 03a5 0A       		.uleb128 0xa
+ 948 03a6 01       		.uleb128 0x1
+ 949 03a7 50       		.byte	0x50
+ 950 03a8 02       		.uleb128 0x2
+ 951 03a9 74       		.byte	0x74
+ 952 03aa 00       		.sleb128 0
+ 953 03ab 00       		.byte	0
+ 954 03ac 09       		.uleb128 0x9
+ 955 03ad 7E000000 		.4byte	.LVL45
+ 956 03b1 A6000000 		.4byte	0xa6
+ 957 03b5 C9030000 		.4byte	0x3c9
+ 958 03b9 0A       		.uleb128 0xa
+ 959 03ba 01       		.uleb128 0x1
+ 960 03bb 50       		.byte	0x50
+ 961 03bc 01       		.uleb128 0x1
+ 962 03bd 30       		.byte	0x30
+ 963 03be 0A       		.uleb128 0xa
+ 964 03bf 01       		.uleb128 0x1
+ 965 03c0 51       		.byte	0x51
+ 966 03c1 01       		.uleb128 0x1
+ 967 03c2 31       		.byte	0x31
+ 968 03c3 0A       		.uleb128 0xa
+ 969 03c4 01       		.uleb128 0x1
+ 970 03c5 52       		.byte	0x52
+ 971 03c6 01       		.uleb128 0x1
+ 972 03c7 31       		.byte	0x31
+ 973 03c8 00       		.byte	0
+ 974 03c9 09       		.uleb128 0x9
+ 975 03ca 88000000 		.4byte	.LVL46
+ 976 03ce A6000000 		.4byte	0xa6
+ 977 03d2 E6030000 		.4byte	0x3e6
+ 978 03d6 0A       		.uleb128 0xa
+ 979 03d7 01       		.uleb128 0x1
+ 980 03d8 50       		.byte	0x50
+ 981 03d9 01       		.uleb128 0x1
+ 982 03da 30       		.byte	0x30
+ 983 03db 0A       		.uleb128 0xa
+ 984 03dc 01       		.uleb128 0x1
+ 985 03dd 51       		.byte	0x51
+ 986 03de 01       		.uleb128 0x1
+ 987 03df 31       		.byte	0x31
+ 988 03e0 0A       		.uleb128 0xa
+ 989 03e1 01       		.uleb128 0x1
+ 990 03e2 52       		.byte	0x52
+ 991 03e3 01       		.uleb128 0x1
+ 992 03e4 32       		.byte	0x32
+ 993 03e5 00       		.byte	0
+ 994 03e6 09       		.uleb128 0x9
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 21
+
+
+ 995 03e7 92000000 		.4byte	.LVL47
+ 996 03eb A6000000 		.4byte	0xa6
+ 997 03ef 03040000 		.4byte	0x403
+ 998 03f3 0A       		.uleb128 0xa
+ 999 03f4 01       		.uleb128 0x1
+ 1000 03f5 50       		.byte	0x50
+ 1001 03f6 01       		.uleb128 0x1
+ 1002 03f7 30       		.byte	0x30
+ 1003 03f8 0A       		.uleb128 0xa
+ 1004 03f9 01       		.uleb128 0x1
+ 1005 03fa 51       		.byte	0x51
+ 1006 03fb 01       		.uleb128 0x1
+ 1007 03fc 31       		.byte	0x31
+ 1008 03fd 0A       		.uleb128 0xa
+ 1009 03fe 01       		.uleb128 0x1
+ 1010 03ff 52       		.byte	0x52
+ 1011 0400 01       		.uleb128 0x1
+ 1012 0401 33       		.byte	0x33
+ 1013 0402 00       		.byte	0
+ 1014 0403 09       		.uleb128 0x9
+ 1015 0404 9C000000 		.4byte	.LVL48
+ 1016 0408 A6000000 		.4byte	0xa6
+ 1017 040c 20040000 		.4byte	0x420
+ 1018 0410 0A       		.uleb128 0xa
+ 1019 0411 01       		.uleb128 0x1
+ 1020 0412 50       		.byte	0x50
+ 1021 0413 01       		.uleb128 0x1
+ 1022 0414 30       		.byte	0x30
+ 1023 0415 0A       		.uleb128 0xa
+ 1024 0416 01       		.uleb128 0x1
+ 1025 0417 51       		.byte	0x51
+ 1026 0418 01       		.uleb128 0x1
+ 1027 0419 31       		.byte	0x31
+ 1028 041a 0A       		.uleb128 0xa
+ 1029 041b 01       		.uleb128 0x1
+ 1030 041c 52       		.byte	0x52
+ 1031 041d 01       		.uleb128 0x1
+ 1032 041e 34       		.byte	0x34
+ 1033 041f 00       		.byte	0
+ 1034 0420 09       		.uleb128 0x9
+ 1035 0421 A2000000 		.4byte	.LVL49
+ 1036 0425 AD060000 		.4byte	0x6ad
+ 1037 0429 35040000 		.4byte	0x435
+ 1038 042d 0A       		.uleb128 0xa
+ 1039 042e 01       		.uleb128 0x1
+ 1040 042f 50       		.byte	0x50
+ 1041 0430 03       		.uleb128 0x3
+ 1042 0431 0A       		.byte	0xa
+ 1043 0432 B80B     		.2byte	0xbb8
+ 1044 0434 00       		.byte	0
+ 1045 0435 09       		.uleb128 0x9
+ 1046 0436 AC000000 		.4byte	.LVL50
+ 1047 043a A6000000 		.4byte	0xa6
+ 1048 043e 52040000 		.4byte	0x452
+ 1049 0442 0A       		.uleb128 0xa
+ 1050 0443 01       		.uleb128 0x1
+ 1051 0444 50       		.byte	0x50
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 22
+
+
+ 1052 0445 01       		.uleb128 0x1
+ 1053 0446 4E       		.byte	0x4e
+ 1054 0447 0A       		.uleb128 0xa
+ 1055 0448 01       		.uleb128 0x1
+ 1056 0449 51       		.byte	0x51
+ 1057 044a 01       		.uleb128 0x1
+ 1058 044b 30       		.byte	0x30
+ 1059 044c 0A       		.uleb128 0xa
+ 1060 044d 01       		.uleb128 0x1
+ 1061 044e 52       		.byte	0x52
+ 1062 044f 01       		.uleb128 0x1
+ 1063 0450 31       		.byte	0x31
+ 1064 0451 00       		.byte	0
+ 1065 0452 09       		.uleb128 0x9
+ 1066 0453 B6000000 		.4byte	.LVL51
+ 1067 0457 A6000000 		.4byte	0xa6
+ 1068 045b 6F040000 		.4byte	0x46f
+ 1069 045f 0A       		.uleb128 0xa
+ 1070 0460 01       		.uleb128 0x1
+ 1071 0461 50       		.byte	0x50
+ 1072 0462 01       		.uleb128 0x1
+ 1073 0463 4E       		.byte	0x4e
+ 1074 0464 0A       		.uleb128 0xa
+ 1075 0465 01       		.uleb128 0x1
+ 1076 0466 51       		.byte	0x51
+ 1077 0467 01       		.uleb128 0x1
+ 1078 0468 30       		.byte	0x30
+ 1079 0469 0A       		.uleb128 0xa
+ 1080 046a 01       		.uleb128 0x1
+ 1081 046b 52       		.byte	0x52
+ 1082 046c 01       		.uleb128 0x1
+ 1083 046d 32       		.byte	0x32
+ 1084 046e 00       		.byte	0
+ 1085 046f 09       		.uleb128 0x9
+ 1086 0470 C0000000 		.4byte	.LVL52
+ 1087 0474 A6000000 		.4byte	0xa6
+ 1088 0478 8C040000 		.4byte	0x48c
+ 1089 047c 0A       		.uleb128 0xa
+ 1090 047d 01       		.uleb128 0x1
+ 1091 047e 50       		.byte	0x50
+ 1092 047f 01       		.uleb128 0x1
+ 1093 0480 4E       		.byte	0x4e
+ 1094 0481 0A       		.uleb128 0xa
+ 1095 0482 01       		.uleb128 0x1
+ 1096 0483 51       		.byte	0x51
+ 1097 0484 01       		.uleb128 0x1
+ 1098 0485 30       		.byte	0x30
+ 1099 0486 0A       		.uleb128 0xa
+ 1100 0487 01       		.uleb128 0x1
+ 1101 0488 52       		.byte	0x52
+ 1102 0489 01       		.uleb128 0x1
+ 1103 048a 33       		.byte	0x33
+ 1104 048b 00       		.byte	0
+ 1105 048c 09       		.uleb128 0x9
+ 1106 048d CA000000 		.4byte	.LVL53
+ 1107 0491 A6000000 		.4byte	0xa6
+ 1108 0495 A9040000 		.4byte	0x4a9
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 23
+
+
+ 1109 0499 0A       		.uleb128 0xa
+ 1110 049a 01       		.uleb128 0x1
+ 1111 049b 50       		.byte	0x50
+ 1112 049c 01       		.uleb128 0x1
+ 1113 049d 4E       		.byte	0x4e
+ 1114 049e 0A       		.uleb128 0xa
+ 1115 049f 01       		.uleb128 0x1
+ 1116 04a0 51       		.byte	0x51
+ 1117 04a1 01       		.uleb128 0x1
+ 1118 04a2 30       		.byte	0x30
+ 1119 04a3 0A       		.uleb128 0xa
+ 1120 04a4 01       		.uleb128 0x1
+ 1121 04a5 52       		.byte	0x52
+ 1122 04a6 01       		.uleb128 0x1
+ 1123 04a7 34       		.byte	0x34
+ 1124 04a8 00       		.byte	0
+ 1125 04a9 09       		.uleb128 0x9
+ 1126 04aa D0000000 		.4byte	.LVL54
+ 1127 04ae AD060000 		.4byte	0x6ad
+ 1128 04b2 BC040000 		.4byte	0x4bc
+ 1129 04b6 0A       		.uleb128 0xa
+ 1130 04b7 01       		.uleb128 0x1
+ 1131 04b8 50       		.byte	0x50
+ 1132 04b9 01       		.uleb128 0x1
+ 1133 04ba 3A       		.byte	0x3a
+ 1134 04bb 00       		.byte	0
+ 1135 04bc 09       		.uleb128 0x9
+ 1136 04bd DA000000 		.4byte	.LVL55
+ 1137 04c1 A6000000 		.4byte	0xa6
+ 1138 04c5 D9040000 		.4byte	0x4d9
+ 1139 04c9 0A       		.uleb128 0xa
+ 1140 04ca 01       		.uleb128 0x1
+ 1141 04cb 50       		.byte	0x50
+ 1142 04cc 01       		.uleb128 0x1
+ 1143 04cd 44       		.byte	0x44
+ 1144 04ce 0A       		.uleb128 0xa
+ 1145 04cf 01       		.uleb128 0x1
+ 1146 04d0 51       		.byte	0x51
+ 1147 04d1 01       		.uleb128 0x1
+ 1148 04d2 30       		.byte	0x30
+ 1149 04d3 0A       		.uleb128 0xa
+ 1150 04d4 01       		.uleb128 0x1
+ 1151 04d5 52       		.byte	0x52
+ 1152 04d6 01       		.uleb128 0x1
+ 1153 04d7 31       		.byte	0x31
+ 1154 04d8 00       		.byte	0
+ 1155 04d9 09       		.uleb128 0x9
+ 1156 04da E4000000 		.4byte	.LVL56
+ 1157 04de A6000000 		.4byte	0xa6
+ 1158 04e2 F6040000 		.4byte	0x4f6
+ 1159 04e6 0A       		.uleb128 0xa
+ 1160 04e7 01       		.uleb128 0x1
+ 1161 04e8 50       		.byte	0x50
+ 1162 04e9 01       		.uleb128 0x1
+ 1163 04ea 44       		.byte	0x44
+ 1164 04eb 0A       		.uleb128 0xa
+ 1165 04ec 01       		.uleb128 0x1
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 24
+
+
+ 1166 04ed 51       		.byte	0x51
+ 1167 04ee 01       		.uleb128 0x1
+ 1168 04ef 30       		.byte	0x30
+ 1169 04f0 0A       		.uleb128 0xa
+ 1170 04f1 01       		.uleb128 0x1
+ 1171 04f2 52       		.byte	0x52
+ 1172 04f3 01       		.uleb128 0x1
+ 1173 04f4 32       		.byte	0x32
+ 1174 04f5 00       		.byte	0
+ 1175 04f6 09       		.uleb128 0x9
+ 1176 04f7 EE000000 		.4byte	.LVL57
+ 1177 04fb A6000000 		.4byte	0xa6
+ 1178 04ff 13050000 		.4byte	0x513
+ 1179 0503 0A       		.uleb128 0xa
+ 1180 0504 01       		.uleb128 0x1
+ 1181 0505 50       		.byte	0x50
+ 1182 0506 01       		.uleb128 0x1
+ 1183 0507 44       		.byte	0x44
+ 1184 0508 0A       		.uleb128 0xa
+ 1185 0509 01       		.uleb128 0x1
+ 1186 050a 51       		.byte	0x51
+ 1187 050b 01       		.uleb128 0x1
+ 1188 050c 30       		.byte	0x30
+ 1189 050d 0A       		.uleb128 0xa
+ 1190 050e 01       		.uleb128 0x1
+ 1191 050f 52       		.byte	0x52
+ 1192 0510 01       		.uleb128 0x1
+ 1193 0511 33       		.byte	0x33
+ 1194 0512 00       		.byte	0
+ 1195 0513 09       		.uleb128 0x9
+ 1196 0514 F8000000 		.4byte	.LVL58
+ 1197 0518 A6000000 		.4byte	0xa6
+ 1198 051c 30050000 		.4byte	0x530
+ 1199 0520 0A       		.uleb128 0xa
+ 1200 0521 01       		.uleb128 0x1
+ 1201 0522 50       		.byte	0x50
+ 1202 0523 01       		.uleb128 0x1
+ 1203 0524 44       		.byte	0x44
+ 1204 0525 0A       		.uleb128 0xa
+ 1205 0526 01       		.uleb128 0x1
+ 1206 0527 51       		.byte	0x51
+ 1207 0528 01       		.uleb128 0x1
+ 1208 0529 30       		.byte	0x30
+ 1209 052a 0A       		.uleb128 0xa
+ 1210 052b 01       		.uleb128 0x1
+ 1211 052c 52       		.byte	0x52
+ 1212 052d 01       		.uleb128 0x1
+ 1213 052e 34       		.byte	0x34
+ 1214 052f 00       		.byte	0
+ 1215 0530 09       		.uleb128 0x9
+ 1216 0531 FE000000 		.4byte	.LVL59
+ 1217 0535 AD060000 		.4byte	0x6ad
+ 1218 0539 44050000 		.4byte	0x544
+ 1219 053d 0A       		.uleb128 0xa
+ 1220 053e 01       		.uleb128 0x1
+ 1221 053f 50       		.byte	0x50
+ 1222 0540 02       		.uleb128 0x2
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 25
+
+
+ 1223 0541 74       		.byte	0x74
+ 1224 0542 00       		.sleb128 0
+ 1225 0543 00       		.byte	0
+ 1226 0544 09       		.uleb128 0x9
+ 1227 0545 08010000 		.4byte	.LVL60
+ 1228 0549 A6000000 		.4byte	0xa6
+ 1229 054d 61050000 		.4byte	0x561
+ 1230 0551 0A       		.uleb128 0xa
+ 1231 0552 01       		.uleb128 0x1
+ 1232 0553 50       		.byte	0x50
+ 1233 0554 01       		.uleb128 0x1
+ 1234 0555 30       		.byte	0x30
+ 1235 0556 0A       		.uleb128 0xa
+ 1236 0557 01       		.uleb128 0x1
+ 1237 0558 51       		.byte	0x51
+ 1238 0559 01       		.uleb128 0x1
+ 1239 055a 30       		.byte	0x30
+ 1240 055b 0A       		.uleb128 0xa
+ 1241 055c 01       		.uleb128 0x1
+ 1242 055d 52       		.byte	0x52
+ 1243 055e 01       		.uleb128 0x1
+ 1244 055f 31       		.byte	0x31
+ 1245 0560 00       		.byte	0
+ 1246 0561 09       		.uleb128 0x9
+ 1247 0562 12010000 		.4byte	.LVL61
+ 1248 0566 A6000000 		.4byte	0xa6
+ 1249 056a 7E050000 		.4byte	0x57e
+ 1250 056e 0A       		.uleb128 0xa
+ 1251 056f 01       		.uleb128 0x1
+ 1252 0570 50       		.byte	0x50
+ 1253 0571 01       		.uleb128 0x1
+ 1254 0572 30       		.byte	0x30
+ 1255 0573 0A       		.uleb128 0xa
+ 1256 0574 01       		.uleb128 0x1
+ 1257 0575 51       		.byte	0x51
+ 1258 0576 01       		.uleb128 0x1
+ 1259 0577 30       		.byte	0x30
+ 1260 0578 0A       		.uleb128 0xa
+ 1261 0579 01       		.uleb128 0x1
+ 1262 057a 52       		.byte	0x52
+ 1263 057b 01       		.uleb128 0x1
+ 1264 057c 32       		.byte	0x32
+ 1265 057d 00       		.byte	0
+ 1266 057e 09       		.uleb128 0x9
+ 1267 057f 1C010000 		.4byte	.LVL62
+ 1268 0583 A6000000 		.4byte	0xa6
+ 1269 0587 9B050000 		.4byte	0x59b
+ 1270 058b 0A       		.uleb128 0xa
+ 1271 058c 01       		.uleb128 0x1
+ 1272 058d 50       		.byte	0x50
+ 1273 058e 01       		.uleb128 0x1
+ 1274 058f 30       		.byte	0x30
+ 1275 0590 0A       		.uleb128 0xa
+ 1276 0591 01       		.uleb128 0x1
+ 1277 0592 51       		.byte	0x51
+ 1278 0593 01       		.uleb128 0x1
+ 1279 0594 30       		.byte	0x30
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 26
+
+
+ 1280 0595 0A       		.uleb128 0xa
+ 1281 0596 01       		.uleb128 0x1
+ 1282 0597 52       		.byte	0x52
+ 1283 0598 01       		.uleb128 0x1
+ 1284 0599 33       		.byte	0x33
+ 1285 059a 00       		.byte	0
+ 1286 059b 09       		.uleb128 0x9
+ 1287 059c 26010000 		.4byte	.LVL63
+ 1288 05a0 A6000000 		.4byte	0xa6
+ 1289 05a4 B8050000 		.4byte	0x5b8
+ 1290 05a8 0A       		.uleb128 0xa
+ 1291 05a9 01       		.uleb128 0x1
+ 1292 05aa 50       		.byte	0x50
+ 1293 05ab 01       		.uleb128 0x1
+ 1294 05ac 30       		.byte	0x30
+ 1295 05ad 0A       		.uleb128 0xa
+ 1296 05ae 01       		.uleb128 0x1
+ 1297 05af 51       		.byte	0x51
+ 1298 05b0 01       		.uleb128 0x1
+ 1299 05b1 30       		.byte	0x30
+ 1300 05b2 0A       		.uleb128 0xa
+ 1301 05b3 01       		.uleb128 0x1
+ 1302 05b4 52       		.byte	0x52
+ 1303 05b5 01       		.uleb128 0x1
+ 1304 05b6 34       		.byte	0x34
+ 1305 05b7 00       		.byte	0
+ 1306 05b8 09       		.uleb128 0x9
+ 1307 05b9 2C010000 		.4byte	.LVL64
+ 1308 05bd AD060000 		.4byte	0x6ad
+ 1309 05c1 CD050000 		.4byte	0x5cd
+ 1310 05c5 0A       		.uleb128 0xa
+ 1311 05c6 01       		.uleb128 0x1
+ 1312 05c7 50       		.byte	0x50
+ 1313 05c8 03       		.uleb128 0x3
+ 1314 05c9 0A       		.byte	0xa
+ 1315 05ca 8813     		.2byte	0x1388
+ 1316 05cc 00       		.byte	0
+ 1317 05cd 09       		.uleb128 0x9
+ 1318 05ce 36010000 		.4byte	.LVL65
+ 1319 05d2 A6000000 		.4byte	0xa6
+ 1320 05d6 EA050000 		.4byte	0x5ea
+ 1321 05da 0A       		.uleb128 0xa
+ 1322 05db 01       		.uleb128 0x1
+ 1323 05dc 50       		.byte	0x50
+ 1324 05dd 01       		.uleb128 0x1
+ 1325 05de 4E       		.byte	0x4e
+ 1326 05df 0A       		.uleb128 0xa
+ 1327 05e0 01       		.uleb128 0x1
+ 1328 05e1 51       		.byte	0x51
+ 1329 05e2 01       		.uleb128 0x1
+ 1330 05e3 31       		.byte	0x31
+ 1331 05e4 0A       		.uleb128 0xa
+ 1332 05e5 01       		.uleb128 0x1
+ 1333 05e6 52       		.byte	0x52
+ 1334 05e7 01       		.uleb128 0x1
+ 1335 05e8 31       		.byte	0x31
+ 1336 05e9 00       		.byte	0
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 27
+
+
+ 1337 05ea 09       		.uleb128 0x9
+ 1338 05eb 40010000 		.4byte	.LVL66
+ 1339 05ef A6000000 		.4byte	0xa6
+ 1340 05f3 07060000 		.4byte	0x607
+ 1341 05f7 0A       		.uleb128 0xa
+ 1342 05f8 01       		.uleb128 0x1
+ 1343 05f9 50       		.byte	0x50
+ 1344 05fa 01       		.uleb128 0x1
+ 1345 05fb 4E       		.byte	0x4e
+ 1346 05fc 0A       		.uleb128 0xa
+ 1347 05fd 01       		.uleb128 0x1
+ 1348 05fe 51       		.byte	0x51
+ 1349 05ff 01       		.uleb128 0x1
+ 1350 0600 31       		.byte	0x31
+ 1351 0601 0A       		.uleb128 0xa
+ 1352 0602 01       		.uleb128 0x1
+ 1353 0603 52       		.byte	0x52
+ 1354 0604 01       		.uleb128 0x1
+ 1355 0605 32       		.byte	0x32
+ 1356 0606 00       		.byte	0
+ 1357 0607 09       		.uleb128 0x9
+ 1358 0608 4A010000 		.4byte	.LVL67
+ 1359 060c A6000000 		.4byte	0xa6
+ 1360 0610 24060000 		.4byte	0x624
+ 1361 0614 0A       		.uleb128 0xa
+ 1362 0615 01       		.uleb128 0x1
+ 1363 0616 50       		.byte	0x50
+ 1364 0617 01       		.uleb128 0x1
+ 1365 0618 4E       		.byte	0x4e
+ 1366 0619 0A       		.uleb128 0xa
+ 1367 061a 01       		.uleb128 0x1
+ 1368 061b 51       		.byte	0x51
+ 1369 061c 01       		.uleb128 0x1
+ 1370 061d 31       		.byte	0x31
+ 1371 061e 0A       		.uleb128 0xa
+ 1372 061f 01       		.uleb128 0x1
+ 1373 0620 52       		.byte	0x52
+ 1374 0621 01       		.uleb128 0x1
+ 1375 0622 33       		.byte	0x33
+ 1376 0623 00       		.byte	0
+ 1377 0624 09       		.uleb128 0x9
+ 1378 0625 54010000 		.4byte	.LVL68
+ 1379 0629 A6000000 		.4byte	0xa6
+ 1380 062d 41060000 		.4byte	0x641
+ 1381 0631 0A       		.uleb128 0xa
+ 1382 0632 01       		.uleb128 0x1
+ 1383 0633 50       		.byte	0x50
+ 1384 0634 01       		.uleb128 0x1
+ 1385 0635 4E       		.byte	0x4e
+ 1386 0636 0A       		.uleb128 0xa
+ 1387 0637 01       		.uleb128 0x1
+ 1388 0638 51       		.byte	0x51
+ 1389 0639 01       		.uleb128 0x1
+ 1390 063a 31       		.byte	0x31
+ 1391 063b 0A       		.uleb128 0xa
+ 1392 063c 01       		.uleb128 0x1
+ 1393 063d 52       		.byte	0x52
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 28
+
+
+ 1394 063e 01       		.uleb128 0x1
+ 1395 063f 34       		.byte	0x34
+ 1396 0640 00       		.byte	0
+ 1397 0641 0B       		.uleb128 0xb
+ 1398 0642 5A010000 		.4byte	.LVL69
+ 1399 0646 AD060000 		.4byte	0x6ad
+ 1400 064a 0A       		.uleb128 0xa
+ 1401 064b 01       		.uleb128 0x1
+ 1402 064c 50       		.byte	0x50
+ 1403 064d 01       		.uleb128 0x1
+ 1404 064e 3A       		.byte	0x3a
+ 1405 064f 00       		.byte	0
+ 1406 0650 00       		.byte	0
+ 1407 0651 0E       		.uleb128 0xe
+ 1408 0652 1A020000 		.4byte	.LASF24
+ 1409 0656 1A020000 		.4byte	.LASF24
+ 1410 065a 03       		.byte	0x3
+ 1411 065b 5501     		.2byte	0x155
+ 1412 065d 0F       		.uleb128 0xf
+ 1413 065e 00000000 		.4byte	.LASF25
+ 1414 0662 00000000 		.4byte	.LASF25
+ 1415 0666 04       		.byte	0x4
+ 1416 0667 33       		.byte	0x33
+ 1417 0668 0E       		.uleb128 0xe
+ 1418 0669 2E010000 		.4byte	.LASF26
+ 1419 066d 2E010000 		.4byte	.LASF26
+ 1420 0671 05       		.byte	0x5
+ 1421 0672 5501     		.2byte	0x155
+ 1422 0674 0F       		.uleb128 0xf
+ 1423 0675 26000000 		.4byte	.LASF27
+ 1424 0679 26000000 		.4byte	.LASF27
+ 1425 067d 06       		.byte	0x6
+ 1426 067e 33       		.byte	0x33
+ 1427 067f 0E       		.uleb128 0xe
+ 1428 0680 3B020000 		.4byte	.LASF28
+ 1429 0684 3B020000 		.4byte	.LASF28
+ 1430 0688 07       		.byte	0x7
+ 1431 0689 5501     		.2byte	0x155
+ 1432 068b 0F       		.uleb128 0xf
+ 1433 068c 8B000000 		.4byte	.LASF29
+ 1434 0690 8B000000 		.4byte	.LASF29
+ 1435 0694 08       		.byte	0x8
+ 1436 0695 33       		.byte	0x33
+ 1437 0696 0E       		.uleb128 0xe
+ 1438 0697 A4000000 		.4byte	.LASF30
+ 1439 069b A4000000 		.4byte	.LASF30
+ 1440 069f 09       		.byte	0x9
+ 1441 06a0 5501     		.2byte	0x155
+ 1442 06a2 0F       		.uleb128 0xf
+ 1443 06a3 D9000000 		.4byte	.LASF31
+ 1444 06a7 D9000000 		.4byte	.LASF31
+ 1445 06ab 0A       		.byte	0xa
+ 1446 06ac 33       		.byte	0x33
+ 1447 06ad 0F       		.uleb128 0xf
+ 1448 06ae 9C000000 		.4byte	.LASF32
+ 1449 06b2 9C000000 		.4byte	.LASF32
+ 1450 06b6 0B       		.byte	0xb
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 29
+
+
+ 1451 06b7 EC       		.byte	0xec
+ 1452 06b8 0E       		.uleb128 0xe
+ 1453 06b9 A2020000 		.4byte	.LASF33
+ 1454 06bd A2020000 		.4byte	.LASF33
+ 1455 06c1 03       		.byte	0x3
+ 1456 06c2 3201     		.2byte	0x132
+ 1457 06c4 0E       		.uleb128 0xe
+ 1458 06c5 09010000 		.4byte	.LASF34
+ 1459 06c9 09010000 		.4byte	.LASF34
+ 1460 06cd 05       		.byte	0x5
+ 1461 06ce 3201     		.2byte	0x132
+ 1462 06d0 0E       		.uleb128 0xe
+ 1463 06d1 41010000 		.4byte	.LASF35
+ 1464 06d5 41010000 		.4byte	.LASF35
+ 1465 06d9 07       		.byte	0x7
+ 1466 06da 3201     		.2byte	0x132
+ 1467 06dc 0E       		.uleb128 0xe
+ 1468 06dd 71010000 		.4byte	.LASF36
+ 1469 06e1 71010000 		.4byte	.LASF36
+ 1470 06e5 09       		.byte	0x9
+ 1471 06e6 3201     		.2byte	0x132
+ 1472 06e8 00       		.byte	0
+ 1473              		.section	.debug_abbrev,"",%progbits
+ 1474              	.Ldebug_abbrev0:
+ 1475 0000 01       		.uleb128 0x1
+ 1476 0001 11       		.uleb128 0x11
+ 1477 0002 01       		.byte	0x1
+ 1478 0003 25       		.uleb128 0x25
+ 1479 0004 0E       		.uleb128 0xe
+ 1480 0005 13       		.uleb128 0x13
+ 1481 0006 0B       		.uleb128 0xb
+ 1482 0007 03       		.uleb128 0x3
+ 1483 0008 0E       		.uleb128 0xe
+ 1484 0009 1B       		.uleb128 0x1b
+ 1485 000a 0E       		.uleb128 0xe
+ 1486 000b 55       		.uleb128 0x55
+ 1487 000c 17       		.uleb128 0x17
+ 1488 000d 11       		.uleb128 0x11
+ 1489 000e 01       		.uleb128 0x1
+ 1490 000f 10       		.uleb128 0x10
+ 1491 0010 17       		.uleb128 0x17
+ 1492 0011 00       		.byte	0
+ 1493 0012 00       		.byte	0
+ 1494 0013 02       		.uleb128 0x2
+ 1495 0014 24       		.uleb128 0x24
+ 1496 0015 00       		.byte	0
+ 1497 0016 0B       		.uleb128 0xb
+ 1498 0017 0B       		.uleb128 0xb
+ 1499 0018 3E       		.uleb128 0x3e
+ 1500 0019 0B       		.uleb128 0xb
+ 1501 001a 03       		.uleb128 0x3
+ 1502 001b 0E       		.uleb128 0xe
+ 1503 001c 00       		.byte	0
+ 1504 001d 00       		.byte	0
+ 1505 001e 03       		.uleb128 0x3
+ 1506 001f 24       		.uleb128 0x24
+ 1507 0020 00       		.byte	0
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 30
+
+
+ 1508 0021 0B       		.uleb128 0xb
+ 1509 0022 0B       		.uleb128 0xb
+ 1510 0023 3E       		.uleb128 0x3e
+ 1511 0024 0B       		.uleb128 0xb
+ 1512 0025 03       		.uleb128 0x3
+ 1513 0026 08       		.uleb128 0x8
+ 1514 0027 00       		.byte	0
+ 1515 0028 00       		.byte	0
+ 1516 0029 04       		.uleb128 0x4
+ 1517 002a 16       		.uleb128 0x16
+ 1518 002b 00       		.byte	0
+ 1519 002c 03       		.uleb128 0x3
+ 1520 002d 0E       		.uleb128 0xe
+ 1521 002e 3A       		.uleb128 0x3a
+ 1522 002f 0B       		.uleb128 0xb
+ 1523 0030 3B       		.uleb128 0x3b
+ 1524 0031 05       		.uleb128 0x5
+ 1525 0032 49       		.uleb128 0x49
+ 1526 0033 13       		.uleb128 0x13
+ 1527 0034 00       		.byte	0
+ 1528 0035 00       		.byte	0
+ 1529 0036 05       		.uleb128 0x5
+ 1530 0037 2E       		.uleb128 0x2e
+ 1531 0038 01       		.byte	0x1
+ 1532 0039 3F       		.uleb128 0x3f
+ 1533 003a 19       		.uleb128 0x19
+ 1534 003b 03       		.uleb128 0x3
+ 1535 003c 0E       		.uleb128 0xe
+ 1536 003d 3A       		.uleb128 0x3a
+ 1537 003e 0B       		.uleb128 0xb
+ 1538 003f 3B       		.uleb128 0x3b
+ 1539 0040 0B       		.uleb128 0xb
+ 1540 0041 27       		.uleb128 0x27
+ 1541 0042 19       		.uleb128 0x19
+ 1542 0043 11       		.uleb128 0x11
+ 1543 0044 01       		.uleb128 0x1
+ 1544 0045 12       		.uleb128 0x12
+ 1545 0046 06       		.uleb128 0x6
+ 1546 0047 40       		.uleb128 0x40
+ 1547 0048 18       		.uleb128 0x18
+ 1548 0049 9742     		.uleb128 0x2117
+ 1549 004b 19       		.uleb128 0x19
+ 1550 004c 01       		.uleb128 0x1
+ 1551 004d 13       		.uleb128 0x13
+ 1552 004e 00       		.byte	0
+ 1553 004f 00       		.byte	0
+ 1554 0050 06       		.uleb128 0x6
+ 1555 0051 05       		.uleb128 0x5
+ 1556 0052 00       		.byte	0
+ 1557 0053 03       		.uleb128 0x3
+ 1558 0054 0E       		.uleb128 0xe
+ 1559 0055 3A       		.uleb128 0x3a
+ 1560 0056 0B       		.uleb128 0xb
+ 1561 0057 3B       		.uleb128 0x3b
+ 1562 0058 0B       		.uleb128 0xb
+ 1563 0059 49       		.uleb128 0x49
+ 1564 005a 13       		.uleb128 0x13
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 31
+
+
+ 1565 005b 02       		.uleb128 0x2
+ 1566 005c 17       		.uleb128 0x17
+ 1567 005d 00       		.byte	0
+ 1568 005e 00       		.byte	0
+ 1569 005f 07       		.uleb128 0x7
+ 1570 0060 34       		.uleb128 0x34
+ 1571 0061 00       		.byte	0
+ 1572 0062 03       		.uleb128 0x3
+ 1573 0063 0E       		.uleb128 0xe
+ 1574 0064 3A       		.uleb128 0x3a
+ 1575 0065 0B       		.uleb128 0xb
+ 1576 0066 3B       		.uleb128 0x3b
+ 1577 0067 0B       		.uleb128 0xb
+ 1578 0068 49       		.uleb128 0x49
+ 1579 0069 13       		.uleb128 0x13
+ 1580 006a 02       		.uleb128 0x2
+ 1581 006b 17       		.uleb128 0x17
+ 1582 006c 00       		.byte	0
+ 1583 006d 00       		.byte	0
+ 1584 006e 08       		.uleb128 0x8
+ 1585 006f 898201   		.uleb128 0x4109
+ 1586 0072 00       		.byte	0
+ 1587 0073 11       		.uleb128 0x11
+ 1588 0074 01       		.uleb128 0x1
+ 1589 0075 31       		.uleb128 0x31
+ 1590 0076 13       		.uleb128 0x13
+ 1591 0077 00       		.byte	0
+ 1592 0078 00       		.byte	0
+ 1593 0079 09       		.uleb128 0x9
+ 1594 007a 898201   		.uleb128 0x4109
+ 1595 007d 01       		.byte	0x1
+ 1596 007e 11       		.uleb128 0x11
+ 1597 007f 01       		.uleb128 0x1
+ 1598 0080 31       		.uleb128 0x31
+ 1599 0081 13       		.uleb128 0x13
+ 1600 0082 01       		.uleb128 0x1
+ 1601 0083 13       		.uleb128 0x13
+ 1602 0084 00       		.byte	0
+ 1603 0085 00       		.byte	0
+ 1604 0086 0A       		.uleb128 0xa
+ 1605 0087 8A8201   		.uleb128 0x410a
+ 1606 008a 00       		.byte	0
+ 1607 008b 02       		.uleb128 0x2
+ 1608 008c 18       		.uleb128 0x18
+ 1609 008d 9142     		.uleb128 0x2111
+ 1610 008f 18       		.uleb128 0x18
+ 1611 0090 00       		.byte	0
+ 1612 0091 00       		.byte	0
+ 1613 0092 0B       		.uleb128 0xb
+ 1614 0093 898201   		.uleb128 0x4109
+ 1615 0096 01       		.byte	0x1
+ 1616 0097 11       		.uleb128 0x11
+ 1617 0098 01       		.uleb128 0x1
+ 1618 0099 31       		.uleb128 0x31
+ 1619 009a 13       		.uleb128 0x13
+ 1620 009b 00       		.byte	0
+ 1621 009c 00       		.byte	0
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 32
+
+
+ 1622 009d 0C       		.uleb128 0xc
+ 1623 009e 05       		.uleb128 0x5
+ 1624 009f 00       		.byte	0
+ 1625 00a0 03       		.uleb128 0x3
+ 1626 00a1 0E       		.uleb128 0xe
+ 1627 00a2 3A       		.uleb128 0x3a
+ 1628 00a3 0B       		.uleb128 0xb
+ 1629 00a4 3B       		.uleb128 0x3b
+ 1630 00a5 0B       		.uleb128 0xb
+ 1631 00a6 49       		.uleb128 0x49
+ 1632 00a7 13       		.uleb128 0x13
+ 1633 00a8 02       		.uleb128 0x2
+ 1634 00a9 18       		.uleb128 0x18
+ 1635 00aa 00       		.byte	0
+ 1636 00ab 00       		.byte	0
+ 1637 00ac 0D       		.uleb128 0xd
+ 1638 00ad 2E       		.uleb128 0x2e
+ 1639 00ae 01       		.byte	0x1
+ 1640 00af 3F       		.uleb128 0x3f
+ 1641 00b0 19       		.uleb128 0x19
+ 1642 00b1 03       		.uleb128 0x3
+ 1643 00b2 0E       		.uleb128 0xe
+ 1644 00b3 3A       		.uleb128 0x3a
+ 1645 00b4 0B       		.uleb128 0xb
+ 1646 00b5 3B       		.uleb128 0x3b
+ 1647 00b6 0B       		.uleb128 0xb
+ 1648 00b7 27       		.uleb128 0x27
+ 1649 00b8 19       		.uleb128 0x19
+ 1650 00b9 49       		.uleb128 0x49
+ 1651 00ba 13       		.uleb128 0x13
+ 1652 00bb 8701     		.uleb128 0x87
+ 1653 00bd 19       		.uleb128 0x19
+ 1654 00be 11       		.uleb128 0x11
+ 1655 00bf 01       		.uleb128 0x1
+ 1656 00c0 12       		.uleb128 0x12
+ 1657 00c1 06       		.uleb128 0x6
+ 1658 00c2 40       		.uleb128 0x40
+ 1659 00c3 18       		.uleb128 0x18
+ 1660 00c4 9742     		.uleb128 0x2117
+ 1661 00c6 19       		.uleb128 0x19
+ 1662 00c7 01       		.uleb128 0x1
+ 1663 00c8 13       		.uleb128 0x13
+ 1664 00c9 00       		.byte	0
+ 1665 00ca 00       		.byte	0
+ 1666 00cb 0E       		.uleb128 0xe
+ 1667 00cc 2E       		.uleb128 0x2e
+ 1668 00cd 00       		.byte	0
+ 1669 00ce 3F       		.uleb128 0x3f
+ 1670 00cf 19       		.uleb128 0x19
+ 1671 00d0 3C       		.uleb128 0x3c
+ 1672 00d1 19       		.uleb128 0x19
+ 1673 00d2 6E       		.uleb128 0x6e
+ 1674 00d3 0E       		.uleb128 0xe
+ 1675 00d4 03       		.uleb128 0x3
+ 1676 00d5 0E       		.uleb128 0xe
+ 1677 00d6 3A       		.uleb128 0x3a
+ 1678 00d7 0B       		.uleb128 0xb
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 33
+
+
+ 1679 00d8 3B       		.uleb128 0x3b
+ 1680 00d9 05       		.uleb128 0x5
+ 1681 00da 00       		.byte	0
+ 1682 00db 00       		.byte	0
+ 1683 00dc 0F       		.uleb128 0xf
+ 1684 00dd 2E       		.uleb128 0x2e
+ 1685 00de 00       		.byte	0
+ 1686 00df 3F       		.uleb128 0x3f
+ 1687 00e0 19       		.uleb128 0x19
+ 1688 00e1 3C       		.uleb128 0x3c
+ 1689 00e2 19       		.uleb128 0x19
+ 1690 00e3 6E       		.uleb128 0x6e
+ 1691 00e4 0E       		.uleb128 0xe
+ 1692 00e5 03       		.uleb128 0x3
+ 1693 00e6 0E       		.uleb128 0xe
+ 1694 00e7 3A       		.uleb128 0x3a
+ 1695 00e8 0B       		.uleb128 0xb
+ 1696 00e9 3B       		.uleb128 0x3b
+ 1697 00ea 0B       		.uleb128 0xb
+ 1698 00eb 00       		.byte	0
+ 1699 00ec 00       		.byte	0
+ 1700 00ed 00       		.byte	0
+ 1701              		.section	.debug_loc,"",%progbits
+ 1702              	.Ldebug_loc0:
+ 1703              	.LLST0:
+ 1704 0000 00000000 		.4byte	.LVL0
+ 1705 0004 0A000000 		.4byte	.LVL2
+ 1706 0008 0100     		.2byte	0x1
+ 1707 000a 50       		.byte	0x50
+ 1708 000b 0A000000 		.4byte	.LVL2
+ 1709 000f 17000000 		.4byte	.LVL5-1
+ 1710 0013 0100     		.2byte	0x1
+ 1711 0015 50       		.byte	0x50
+ 1712 0016 20000000 		.4byte	.LVL7
+ 1713 001a 27000000 		.4byte	.LVL8-1
+ 1714 001e 0100     		.2byte	0x1
+ 1715 0020 50       		.byte	0x50
+ 1716 0021 30000000 		.4byte	.LVL10
+ 1717 0025 37000000 		.4byte	.LVL11-1
+ 1718 0029 0100     		.2byte	0x1
+ 1719 002b 50       		.byte	0x50
+ 1720 002c 40000000 		.4byte	.LVL13
+ 1721 0030 47000000 		.4byte	.LVL14-1
+ 1722 0034 0100     		.2byte	0x1
+ 1723 0036 50       		.byte	0x50
+ 1724 0037 00000000 		.4byte	0
+ 1725 003b 00000000 		.4byte	0
+ 1726              	.LLST1:
+ 1727 003f 00000000 		.4byte	.LVL0
+ 1728 0043 17000000 		.4byte	.LVL5-1
+ 1729 0047 0100     		.2byte	0x1
+ 1730 0049 51       		.byte	0x51
+ 1731 004a 17000000 		.4byte	.LVL5-1
+ 1732 004e 20000000 		.4byte	.LVL7
+ 1733 0052 0400     		.2byte	0x4
+ 1734 0054 F3       		.byte	0xf3
+ 1735 0055 01       		.uleb128 0x1
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 34
+
+
+ 1736 0056 51       		.byte	0x51
+ 1737 0057 9F       		.byte	0x9f
+ 1738 0058 20000000 		.4byte	.LVL7
+ 1739 005c 27000000 		.4byte	.LVL8-1
+ 1740 0060 0100     		.2byte	0x1
+ 1741 0062 51       		.byte	0x51
+ 1742 0063 27000000 		.4byte	.LVL8-1
+ 1743 0067 30000000 		.4byte	.LVL10
+ 1744 006b 0400     		.2byte	0x4
+ 1745 006d F3       		.byte	0xf3
+ 1746 006e 01       		.uleb128 0x1
+ 1747 006f 51       		.byte	0x51
+ 1748 0070 9F       		.byte	0x9f
+ 1749 0071 30000000 		.4byte	.LVL10
+ 1750 0075 37000000 		.4byte	.LVL11-1
+ 1751 0079 0100     		.2byte	0x1
+ 1752 007b 51       		.byte	0x51
+ 1753 007c 37000000 		.4byte	.LVL11-1
+ 1754 0080 40000000 		.4byte	.LVL13
+ 1755 0084 0400     		.2byte	0x4
+ 1756 0086 F3       		.byte	0xf3
+ 1757 0087 01       		.uleb128 0x1
+ 1758 0088 51       		.byte	0x51
+ 1759 0089 9F       		.byte	0x9f
+ 1760 008a 40000000 		.4byte	.LVL13
+ 1761 008e 47000000 		.4byte	.LVL14-1
+ 1762 0092 0100     		.2byte	0x1
+ 1763 0094 51       		.byte	0x51
+ 1764 0095 47000000 		.4byte	.LVL14-1
+ 1765 0099 50000000 		.4byte	.LFE35
+ 1766 009d 0400     		.2byte	0x4
+ 1767 009f F3       		.byte	0xf3
+ 1768 00a0 01       		.uleb128 0x1
+ 1769 00a1 51       		.byte	0x51
+ 1770 00a2 9F       		.byte	0x9f
+ 1771 00a3 00000000 		.4byte	0
+ 1772 00a7 00000000 		.4byte	0
+ 1773              	.LLST2:
+ 1774 00ab 00000000 		.4byte	.LVL0
+ 1775 00af 17000000 		.4byte	.LVL5-1
+ 1776 00b3 0100     		.2byte	0x1
+ 1777 00b5 52       		.byte	0x52
+ 1778 00b6 17000000 		.4byte	.LVL5-1
+ 1779 00ba 20000000 		.4byte	.LVL7
+ 1780 00be 0400     		.2byte	0x4
+ 1781 00c0 F3       		.byte	0xf3
+ 1782 00c1 01       		.uleb128 0x1
+ 1783 00c2 52       		.byte	0x52
+ 1784 00c3 9F       		.byte	0x9f
+ 1785 00c4 20000000 		.4byte	.LVL7
+ 1786 00c8 27000000 		.4byte	.LVL8-1
+ 1787 00cc 0100     		.2byte	0x1
+ 1788 00ce 52       		.byte	0x52
+ 1789 00cf 27000000 		.4byte	.LVL8-1
+ 1790 00d3 30000000 		.4byte	.LVL10
+ 1791 00d7 0400     		.2byte	0x4
+ 1792 00d9 F3       		.byte	0xf3
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 35
+
+
+ 1793 00da 01       		.uleb128 0x1
+ 1794 00db 52       		.byte	0x52
+ 1795 00dc 9F       		.byte	0x9f
+ 1796 00dd 30000000 		.4byte	.LVL10
+ 1797 00e1 37000000 		.4byte	.LVL11-1
+ 1798 00e5 0100     		.2byte	0x1
+ 1799 00e7 52       		.byte	0x52
+ 1800 00e8 37000000 		.4byte	.LVL11-1
+ 1801 00ec 40000000 		.4byte	.LVL13
+ 1802 00f0 0400     		.2byte	0x4
+ 1803 00f2 F3       		.byte	0xf3
+ 1804 00f3 01       		.uleb128 0x1
+ 1805 00f4 52       		.byte	0x52
+ 1806 00f5 9F       		.byte	0x9f
+ 1807 00f6 40000000 		.4byte	.LVL13
+ 1808 00fa 47000000 		.4byte	.LVL14-1
+ 1809 00fe 0100     		.2byte	0x1
+ 1810 0100 52       		.byte	0x52
+ 1811 0101 47000000 		.4byte	.LVL14-1
+ 1812 0105 50000000 		.4byte	.LFE35
+ 1813 0109 0400     		.2byte	0x4
+ 1814 010b F3       		.byte	0xf3
+ 1815 010c 01       		.uleb128 0x1
+ 1816 010d 52       		.byte	0x52
+ 1817 010e 9F       		.byte	0x9f
+ 1818 010f 00000000 		.4byte	0
+ 1819 0113 00000000 		.4byte	0
+ 1820              	.LLST3:
+ 1821 0117 02000000 		.4byte	.LVL1
+ 1822 011b 0A000000 		.4byte	.LVL2
+ 1823 011f 0200     		.2byte	0x2
+ 1824 0121 30       		.byte	0x30
+ 1825 0122 9F       		.byte	0x9f
+ 1826 0123 0A000000 		.4byte	.LVL2
+ 1827 0127 0E000000 		.4byte	.LVL3
+ 1828 012b 0200     		.2byte	0x2
+ 1829 012d 31       		.byte	0x31
+ 1830 012e 9F       		.byte	0x9f
+ 1831 012f 0E000000 		.4byte	.LVL3
+ 1832 0133 10000000 		.4byte	.LVL4
+ 1833 0137 0200     		.2byte	0x2
+ 1834 0139 30       		.byte	0x30
+ 1835 013a 9F       		.byte	0x9f
+ 1836 013b 10000000 		.4byte	.LVL4
+ 1837 013f 4E000000 		.4byte	.LVL16
+ 1838 0143 0100     		.2byte	0x1
+ 1839 0145 54       		.byte	0x54
+ 1840 0146 00000000 		.4byte	0
+ 1841 014a 00000000 		.4byte	0
+ 1842              	.LLST4:
+ 1843 014e 00000000 		.4byte	.LVL17
+ 1844 0152 10000000 		.4byte	.LVL20
+ 1845 0156 0100     		.2byte	0x1
+ 1846 0158 50       		.byte	0x50
+ 1847 0159 10000000 		.4byte	.LVL20
+ 1848 015d 3A000000 		.4byte	.LVL29
+ 1849 0161 0100     		.2byte	0x1
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 36
+
+
+ 1850 0163 56       		.byte	0x56
+ 1851 0164 3A000000 		.4byte	.LVL29
+ 1852 0168 3C000000 		.4byte	.LFE36
+ 1853 016c 0400     		.2byte	0x4
+ 1854 016e F3       		.byte	0xf3
+ 1855 016f 01       		.uleb128 0x1
+ 1856 0170 50       		.byte	0x50
+ 1857 0171 9F       		.byte	0x9f
+ 1858 0172 00000000 		.4byte	0
+ 1859 0176 00000000 		.4byte	0
+ 1860              	.LLST5:
+ 1861 017a 00000000 		.4byte	.LVL17
+ 1862 017e 0E000000 		.4byte	.LVL19
+ 1863 0182 0100     		.2byte	0x1
+ 1864 0184 51       		.byte	0x51
+ 1865 0185 0E000000 		.4byte	.LVL19
+ 1866 0189 3A000000 		.4byte	.LVL28
+ 1867 018d 0100     		.2byte	0x1
+ 1868 018f 55       		.byte	0x55
+ 1869 0190 3A000000 		.4byte	.LVL28
+ 1870 0194 3C000000 		.4byte	.LFE36
+ 1871 0198 0400     		.2byte	0x4
+ 1872 019a F3       		.byte	0xf3
+ 1873 019b 01       		.uleb128 0x1
+ 1874 019c 51       		.byte	0x51
+ 1875 019d 9F       		.byte	0x9f
+ 1876 019e 00000000 		.4byte	0
+ 1877 01a2 00000000 		.4byte	0
+ 1878              	.LLST6:
+ 1879 01a6 00000000 		.4byte	.LVL17
+ 1880 01aa 0C000000 		.4byte	.LVL18
+ 1881 01ae 0100     		.2byte	0x1
+ 1882 01b0 52       		.byte	0x52
+ 1883 01b1 0C000000 		.4byte	.LVL18
+ 1884 01b5 3A000000 		.4byte	.LVL30
+ 1885 01b9 0100     		.2byte	0x1
+ 1886 01bb 57       		.byte	0x57
+ 1887 01bc 3A000000 		.4byte	.LVL30
+ 1888 01c0 3C000000 		.4byte	.LFE36
+ 1889 01c4 0400     		.2byte	0x4
+ 1890 01c6 F3       		.byte	0xf3
+ 1891 01c7 01       		.uleb128 0x1
+ 1892 01c8 52       		.byte	0x52
+ 1893 01c9 9F       		.byte	0x9f
+ 1894 01ca 00000000 		.4byte	0
+ 1895 01ce 00000000 		.4byte	0
+ 1896              	.LLST7:
+ 1897 01d2 00000000 		.4byte	.LVL17
+ 1898 01d6 13000000 		.4byte	.LVL21-1
+ 1899 01da 0100     		.2byte	0x1
+ 1900 01dc 53       		.byte	0x53
+ 1901 01dd 13000000 		.4byte	.LVL21-1
+ 1902 01e1 3A000000 		.4byte	.LVL27
+ 1903 01e5 0100     		.2byte	0x1
+ 1904 01e7 54       		.byte	0x54
+ 1905 01e8 3A000000 		.4byte	.LVL27
+ 1906 01ec 3C000000 		.4byte	.LFE36
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 37
+
+
+ 1907 01f0 0400     		.2byte	0x4
+ 1908 01f2 F3       		.byte	0xf3
+ 1909 01f3 01       		.uleb128 0x1
+ 1910 01f4 53       		.byte	0x53
+ 1911 01f5 9F       		.byte	0x9f
+ 1912 01f6 00000000 		.4byte	0
+ 1913 01fa 00000000 		.4byte	0
+ 1914              		.section	.debug_aranges,"",%progbits
+ 1915 0000 2C000000 		.4byte	0x2c
+ 1916 0004 0200     		.2byte	0x2
+ 1917 0006 00000000 		.4byte	.Ldebug_info0
+ 1918 000a 04       		.byte	0x4
+ 1919 000b 00       		.byte	0
+ 1920 000c 0000     		.2byte	0
+ 1921 000e 0000     		.2byte	0
+ 1922 0010 00000000 		.4byte	.LFB35
+ 1923 0014 50000000 		.4byte	.LFE35-.LFB35
+ 1924 0018 00000000 		.4byte	.LFB36
+ 1925 001c 3C000000 		.4byte	.LFE36-.LFB36
+ 1926 0020 00000000 		.4byte	.LFB37
+ 1927 0024 64010000 		.4byte	.LFE37-.LFB37
+ 1928 0028 00000000 		.4byte	0
+ 1929 002c 00000000 		.4byte	0
+ 1930              		.section	.debug_ranges,"",%progbits
+ 1931              	.Ldebug_ranges0:
+ 1932 0000 00000000 		.4byte	.LFB35
+ 1933 0004 50000000 		.4byte	.LFE35
+ 1934 0008 00000000 		.4byte	.LFB36
+ 1935 000c 3C000000 		.4byte	.LFE36
+ 1936 0010 00000000 		.4byte	.LFB37
+ 1937 0014 64010000 		.4byte	.LFE37
+ 1938 0018 00000000 		.4byte	0
+ 1939 001c 00000000 		.4byte	0
+ 1940              		.section	.debug_line,"",%progbits
+ 1941              	.Ldebug_line0:
+ 1942 0000 A5010000 		.section	.debug_str,"MS",%progbits,1
+ 1942      0200B800 
+ 1942      00000201 
+ 1942      FB0E0D00 
+ 1942      01010101 
+ 1943              	.LASF25:
+ 1944 0000 50696E5F 		.ascii	"Pin_pair01_Write\000"
+ 1944      70616972 
+ 1944      30315F57 
+ 1944      72697465 
+ 1944      00
+ 1945              	.LASF18:
+ 1946 0011 6E756D5F 		.ascii	"num_servo\000"
+ 1946      73657276 
+ 1946      6F00
+ 1947              	.LASF20:
+ 1948 001b 6D6F7665 		.ascii	"move_servo\000"
+ 1948      5F736572 
+ 1948      766F00
+ 1949              	.LASF27:
+ 1950 0026 50696E5F 		.ascii	"Pin_pair02_Write\000"
+ 1950      70616972 
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 38
+
+
+ 1950      30325F57 
+ 1950      72697465 
+ 1950      00
+ 1951              	.LASF40:
+ 1952 0037 70696E5F 		.ascii	"pin_val\000"
+ 1952      76616C00 
+ 1953              	.LASF3:
+ 1954 003f 73686F72 		.ascii	"short unsigned int\000"
+ 1954      7420756E 
+ 1954      7369676E 
+ 1954      65642069 
+ 1954      6E7400
+ 1955              	.LASF39:
+ 1956 0052 433A5C55 		.ascii	"C:\\Users\\ivddo\\OneDrive\\dcmotor\\Design02.cydsn"
+ 1956      73657273 
+ 1956      5C697664 
+ 1956      646F5C4F 
+ 1956      6E654472 
+ 1957 0080 00       		.ascii	"\000"
+ 1958              	.LASF17:
+ 1959 0081 64697265 		.ascii	"direction\000"
+ 1959      6374696F 
+ 1959      6E00
+ 1960              	.LASF29:
+ 1961 008b 50696E5F 		.ascii	"Pin_pair03_Write\000"
+ 1961      70616972 
+ 1961      30335F57 
+ 1961      72697465 
+ 1961      00
+ 1962              	.LASF32:
+ 1963 009c 43794465 		.ascii	"CyDelay\000"
+ 1963      6C617900 
+ 1964              	.LASF30:
+ 1965 00a4 50574D5F 		.ascii	"PWM_4_WriteCompare\000"
+ 1965      345F5772 
+ 1965      69746543 
+ 1965      6F6D7061 
+ 1965      726500
+ 1966              	.LASF16:
+ 1967 00b7 73706565 		.ascii	"speed_percent\000"
+ 1967      645F7065 
+ 1967      7263656E 
+ 1967      7400
+ 1968              	.LASF11:
+ 1969 00c5 666C6F61 		.ascii	"float\000"
+ 1969      7400
+ 1970              	.LASF1:
+ 1971 00cb 756E7369 		.ascii	"unsigned char\000"
+ 1971      676E6564 
+ 1971      20636861 
+ 1971      7200
+ 1972              	.LASF31:
+ 1973 00d9 50696E5F 		.ascii	"Pin_pair04_Write\000"
+ 1973      70616972 
+ 1973      30345F57 
+ 1973      72697465 
+ 1973      00
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 39
+
+
+ 1974              	.LASF5:
+ 1975 00ea 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1975      20756E73 
+ 1975      69676E65 
+ 1975      6420696E 
+ 1975      7400
+ 1976              	.LASF9:
+ 1977 00fc 75696E74 		.ascii	"uint8\000"
+ 1977      3800
+ 1978              	.LASF12:
+ 1979 0102 646F7562 		.ascii	"double\000"
+ 1979      6C6500
+ 1980              	.LASF34:
+ 1981 0109 50574D5F 		.ascii	"PWM_2_Start\000"
+ 1981      325F5374 
+ 1981      61727400 
+ 1982              	.LASF21:
+ 1983 0115 74696D65 		.ascii	"time_to_work\000"
+ 1983      5F746F5F 
+ 1983      776F726B 
+ 1983      00
+ 1984              	.LASF41:
+ 1985 0122 6D61696E 		.ascii	"main\000"
+ 1985      00
+ 1986              	.LASF10:
+ 1987 0127 75696E74 		.ascii	"uint32\000"
+ 1987      333200
+ 1988              	.LASF26:
+ 1989 012e 50574D5F 		.ascii	"PWM_2_WriteCompare\000"
+ 1989      325F5772 
+ 1989      69746543 
+ 1989      6F6D7061 
+ 1989      726500
+ 1990              	.LASF35:
+ 1991 0141 50574D5F 		.ascii	"PWM_3_Start\000"
+ 1991      335F5374 
+ 1991      61727400 
+ 1992              	.LASF8:
+ 1993 014d 756E7369 		.ascii	"unsigned int\000"
+ 1993      676E6564 
+ 1993      20696E74 
+ 1993      00
+ 1994              	.LASF7:
+ 1995 015a 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1995      206C6F6E 
+ 1995      6720756E 
+ 1995      7369676E 
+ 1995      65642069 
+ 1996              	.LASF36:
+ 1997 0171 50574D5F 		.ascii	"PWM_4_Start\000"
+ 1997      345F5374 
+ 1997      61727400 
+ 1998              	.LASF37:
+ 1999 017d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1999      43313120 
+ 1999      352E342E 
+ 1999      31203230 
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 40
+
+
+ 1999      31363036 
+ 2000 01b0 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 2000      20726576 
+ 2000      6973696F 
+ 2000      6E203233 
+ 2000      37373135 
+ 2001 01e3 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 2001      66756E63 
+ 2001      74696F6E 
+ 2001      2D736563 
+ 2001      74696F6E 
+ 2002              	.LASF23:
+ 2003 020b 73706565 		.ascii	"speed\000"
+ 2003      6400
+ 2004              	.LASF15:
+ 2005 0211 73697A65 		.ascii	"sizetype\000"
+ 2005      74797065 
+ 2005      00
+ 2006              	.LASF24:
+ 2007 021a 50574D5F 		.ascii	"PWM_1_WriteCompare\000"
+ 2007      315F5772 
+ 2007      69746543 
+ 2007      6F6D7061 
+ 2007      726500
+ 2008              	.LASF6:
+ 2009 022d 6C6F6E67 		.ascii	"long long int\000"
+ 2009      206C6F6E 
+ 2009      6720696E 
+ 2009      7400
+ 2010              	.LASF28:
+ 2011 023b 50574D5F 		.ascii	"PWM_3_WriteCompare\000"
+ 2011      335F5772 
+ 2011      69746543 
+ 2011      6F6D7061 
+ 2011      726500
+ 2012              	.LASF13:
+ 2013 024e 63686172 		.ascii	"char\000"
+ 2013      00
+ 2014              	.LASF2:
+ 2015 0253 73686F72 		.ascii	"short int\000"
+ 2015      7420696E 
+ 2015      7400
+ 2016              	.LASF22:
+ 2017 025d 62726561 		.ascii	"break_time\000"
+ 2017      6B5F7469 
+ 2017      6D6500
+ 2018              	.LASF4:
+ 2019 0268 6C6F6E67 		.ascii	"long int\000"
+ 2019      20696E74 
+ 2019      00
+ 2020              	.LASF14:
+ 2021 0271 6C6F6E67 		.ascii	"long double\000"
+ 2021      20646F75 
+ 2021      626C6500 
+ 2022              	.LASF0:
+ 2023 027d 7369676E 		.ascii	"signed char\000"
+ 2023      65642063 
+ARM GAS  C:\Users\ivddo\AppData\Local\Temp\cc5irsHN.s 			page 41
+
+
+ 2023      68617200 
+ 2024              	.LASF19:
+ 2025 0289 636F6E74 		.ascii	"control_direction\000"
+ 2025      726F6C5F 
+ 2025      64697265 
+ 2025      6374696F 
+ 2025      6E00
+ 2026              	.LASF38:
+ 2027 029b 6D61696E 		.ascii	"main.c\000"
+ 2027      2E6300
+ 2028              	.LASF33:
+ 2029 02a2 50574D5F 		.ascii	"PWM_1_Start\000"
+ 2029      315F5374 
+ 2029      61727400 
+ 2030              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
