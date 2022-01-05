@@ -40,7 +40,7 @@ void control_direction(int speed_percent, int direction, int num_servo) {
     }    
 }
 
-void move_servo(uint32 time_to_work, uint32 break_time, int speed, int direction,  int num_servo) {
+void move_servo(int time_to_work, int break_time, int speed, int direction,  int num_servo) {
     control_direction(30, direction, num_servo);
     CyDelay(10);
     
@@ -50,6 +50,7 @@ void move_servo(uint32 time_to_work, uint32 break_time, int speed, int direction
     control_direction(0, direction, num_servo);
     CyDelay(break_time);
 }
+
 
 int main(void)
 {
@@ -64,13 +65,27 @@ int main(void)
     
     //int cmp = 70;
       
-    control_direction(30, 1, 1);
-    control_direction(30, 1, 2);
-    control_direction(30, 1, 3);
-    control_direction(30, 1, 4);
-    CyDelay(10);
+    // control_direction(70, 1, 1);
+    // control_direction(70, 1, 2);
+    // control_direction(70, 1, 3);
+    // control_direction(70, 1, 4);
+    // CyDelay(10);
+
+    // move_servo(500, 500, 20, 1, 1);
+
+    // control_direction(0, 1, 1);
+    // CyDelay(10);
+
+    // move_servo(500, 500, 20, 0, 1);
+
+    // control_direction(0, 0, 1);
+    // CyDelay(10);
+
     for(;;)
     {
+
+        // test();
+
        //Pin_Green_Write(Pin_SW2_Read());
        
         //move_servo(500, 500, 10, 1, 1);
@@ -79,7 +94,7 @@ int main(void)
         
         //move_servo(1000, 500, 30, 1, 3);
         
-        //move_servo(2000, 500, 10, 0, 4);
+        move_servo(2000, 500, 20, 0, 1);
         
         
         
@@ -101,7 +116,7 @@ int main(void)
       
       
 
-        control_direction(20, 1, 1);
+        /*control_direction(20, 1, 1);
         control_direction(20, 1, 2);
         control_direction(20, 1, 3);
         control_direction(20, 1, 4);
@@ -142,7 +157,7 @@ int main(void)
         control_direction(30, 1, 3);
         control_direction(30, 1, 4);
         
-        CyDelay(10);
+        CyDelay(10);*/
         /*cmp = 70;*/
         /* Place your application code here. */
     }
