@@ -1,14 +1,3 @@
-/* ========================================
- *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
- *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
- *
- * ========================================
-*/
 #include "project.h"
 
 //void stop(int
@@ -46,121 +35,38 @@ void move_servo(int time_to_work, int break_time, int speed, int direction,  int
     
     control_direction(speed, direction, num_servo);
     CyDelay(time_to_work);
-    
+
     control_direction(0, direction, num_servo);
     CyDelay(break_time);
+    
 }
 
 
 int main(void)
 {
-    CyGlobalIntEnable; /* Enable global interrupts. */
+    CyGlobalIntEnable; 
     
     PWM_1_Start();
     PWM_2_Start();
     PWM_3_Start();
     PWM_4_Start();
-    /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-    //PWM_2_Start();
-    
-    //int cmp = 70;
-      
-    // control_direction(70, 1, 1);
-    // control_direction(70, 1, 2);
-    // control_direction(70, 1, 3);
-    // control_direction(70, 1, 4);
-    // CyDelay(10);
 
-    // move_servo(500, 500, 20, 1, 1);
-
-    // control_direction(0, 1, 1);
-    // CyDelay(10);
-
-    // move_servo(500, 500, 20, 0, 1);
-
-    // control_direction(0, 0, 1);
-    // CyDelay(10);
 
     for(;;)
     {
 
-        // test();
+        
+        move_servo(500, 1000, 20, 0, 1);
+        move_servo(500, 1000, 20, 0, 2);
+        move_servo(500, 1000, 20, 0, 3);
+        move_servo(500, 1000, 20, 0, 4);
 
-       //Pin_Green_Write(Pin_SW2_Read());
-       
-        //move_servo(500, 500, 10, 1, 1);
-        
-        //move_servo(500, 500, 20, 0, 2);
-        
-        //move_servo(1000, 500, 30, 1, 3);
-        
-        move_servo(2000, 500, 20, 0, 1);
-        
-        
-        
-        //move_servo(500, 500, 10, 0, 1);
-        
-        //move_servo(500, 500, 20, 1, 2);
-        
-        //move_servo(1000, 500, 30, 0, 3);
-        
-        //move_servo(2000, 500, 10, 1, 4);
-        
-    
-    
-        
-        //PWM_1_WriteCompare(cmp);
-        //Pin_1_Write(1);
-        //Pin_2_Write(0);
-        //CyDelay(3000);
-      
-      
 
-        /*control_direction(20, 1, 1);
-        control_direction(20, 1, 2);
-        control_direction(20, 1, 3);
-        control_direction(20, 1, 4);
-        
-        CyDelay(1000);
-        
-        control_direction(0, 1, 1);
-        control_direction(0, 1, 2);
-        control_direction(0, 1, 3);
-        control_direction(0, 1, 4);
-        
-        CyDelay(3000);
-          
-        control_direction(30, 0, 1);
-        control_direction(30, 0, 2);
-        control_direction(30, 0, 3);
-        control_direction(30, 0, 4);
-        
-        
-        CyDelay(10);
-        
-        control_direction(20, 0, 1);
-        control_direction(20, 0, 2);
-        control_direction(20, 0, 3);
-        control_direction(20, 0, 4);
-        
-        CyDelay(1000);
-        
-        control_direction(0, 0, 1);
-        control_direction(0, 0, 2);
-        control_direction(0, 0, 3);
-        control_direction(0, 0, 4);
-        
-        CyDelay(5000);
-        
-        control_direction(30, 1, 1);
-        control_direction(30, 1, 2);
-        control_direction(30, 1, 3);
-        control_direction(30, 1, 4);
-        
-        CyDelay(10);*/
-        /*cmp = 70;*/
-        /* Place your application code here. */
+        move_servo(500, 1000, 20, 1, 1);
+        move_servo(500, 1000, 20, 1, 2);
+        move_servo(500, 1000, 20, 1, 3);
+        move_servo(500, 1000, 20, 1, 4);
+
+
     }
 }
-
-/* [] END OF FILE */
