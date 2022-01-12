@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
   28:Generated_Source\PSoC4/PWM_1_PM.c **** * Summary:
   29:Generated_Source\PSoC4/PWM_1_PM.c **** *  All configuration registers are retention. Nothing to save here.
   30:Generated_Source\PSoC4/PWM_1_PM.c **** *
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 2
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 2
 
 
   31:Generated_Source\PSoC4/PWM_1_PM.c **** * Parameters:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
   53              		.cfi_offset 4, -8
   54              		.cfi_offset 14, -4
   60:Generated_Source\PSoC4/PWM_1_PM.c ****     if(0u != (PWM_1_BLOCK_CONTROL_REG & PWM_1_MASK))
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 3
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 3
 
 
   55              		.loc 1 60 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
   77:Generated_Source\PSoC4/PWM_1_PM.c **** *
   78:Generated_Source\PSoC4/PWM_1_PM.c **** * Summary:
   79:Generated_Source\PSoC4/PWM_1_PM.c **** *  All configuration registers are retention. Nothing to restore here.
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 4
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 4
 
 
   80:Generated_Source\PSoC4/PWM_1_PM.c **** *
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  117              		.cfi_def_cfa_offset 8
  118              		.cfi_offset 4, -8
  119              		.cfi_offset 14, -4
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 5
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 5
 
 
  110:Generated_Source\PSoC4/PWM_1_PM.c ****     PWM_1_RestoreConfig();
@@ -287,8 +287,8 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  156 000b 01       		.uleb128 0x1
  157 000c EA000000 		.4byte	.LASF24
  158 0010 0C       		.byte	0xc
- 159 0011 D3010000 		.4byte	.LASF25
- 160 0015 A4010000 		.4byte	.LASF26
+ 159 0011 B0010000 		.4byte	.LASF25
+ 160 0015 F1010000 		.4byte	.LASF26
  161 0019 00000000 		.4byte	.Ldebug_ranges0+0
  162 001d 00000000 		.4byte	0
  163 0021 00000000 		.4byte	.Ldebug_line0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  167 0028 8B010000 		.4byte	.LASF0
  168 002c 02       		.uleb128 0x2
  169 002d 01       		.byte	0x1
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 6
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 6
 
 
  170 002e 08       		.byte	0x8
@@ -306,7 +306,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  172 0033 02       		.uleb128 0x2
  173 0034 02       		.byte	0x2
  174 0035 05       		.byte	0x5
- 175 0036 0D020000 		.4byte	.LASF2
+ 175 0036 E7010000 		.4byte	.LASF2
  176 003a 02       		.uleb128 0x2
  177 003b 02       		.byte	0x2
  178 003c 07       		.byte	0x7
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  224 0093 08       		.byte	0x8
  225 0094 AF000000 		.4byte	.LASF13
  226 0098 04       		.uleb128 0x4
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 7
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 7
 
 
  227 0099 E4000000 		.4byte	.LASF14
@@ -370,11 +370,11 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  233 00a9 02       		.uleb128 0x2
  234 00aa 08       		.byte	0x8
  235 00ab 04       		.byte	0x4
- 236 00ac F5010000 		.4byte	.LASF15
+ 236 00ac 97010000 		.4byte	.LASF15
  237 00b0 02       		.uleb128 0x2
  238 00b1 04       		.byte	0x4
  239 00b2 07       		.byte	0x7
- 240 00b3 17020000 		.4byte	.LASF16
+ 240 00b3 D2010000 		.4byte	.LASF16
  241 00b7 06       		.uleb128 0x6
  242 00b8 01       		.byte	0x1
  243 00b9 03       		.byte	0x3
@@ -401,7 +401,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  264 00e6 01       		.uleb128 0x1
  265 00e7 9C       		.byte	0x9c
  266 00e8 0A       		.uleb128 0xa
- 267 00e9 01020000 		.4byte	.LASF20
+ 267 00e9 DB010000 		.4byte	.LASF20
  268 00ed 01       		.byte	0x1
  269 00ee 3A       		.byte	0x3a
  270 00ef 00000000 		.4byte	.LFB3
@@ -418,14 +418,14 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  281 010c 01       		.byte	0x1
  282 010d 58       		.byte	0x58
  283 010e 00000000 		.4byte	.LFB4
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 8
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 8
 
 
  284 0112 02000000 		.4byte	.LFE4-.LFB4
  285 0116 01       		.uleb128 0x1
  286 0117 9C       		.byte	0x9c
  287 0118 0A       		.uleb128 0xa
- 288 0119 97010000 		.4byte	.LASF21
+ 288 0119 A3010000 		.4byte	.LASF21
  289 011d 01       		.byte	0x1
  290 011e 6C       		.byte	0x6c
  291 011f 00000000 		.4byte	.LFB5
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  338 0011 00       		.byte	0
  339 0012 00       		.byte	0
  340 0013 02       		.uleb128 0x2
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 9
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 9
 
 
  341 0014 24       		.uleb128 0x24
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  395 004a 07       		.uleb128 0x7
  396 004b 0D       		.uleb128 0xd
  397 004c 00       		.byte	0
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 10
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 10
 
 
  398 004d 03       		.uleb128 0x3
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  452 0084 0E       		.uleb128 0xe
  453 0085 3A       		.uleb128 0x3a
  454 0086 0B       		.uleb128 0xb
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 11
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 11
 
 
  455 0087 3B       		.uleb128 0x3b
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  509 00c0 05       		.uleb128 0x5
  510 00c1 00       		.byte	0
  511 00c2 00       		.byte	0
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 12
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 12
 
 
  512 00c3 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  553      00
  554              	.LASF23:
  555 002d 50574D5F 		.ascii	"PWM_1_Enable\000"
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 13
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 13
 
 
  555      315F456E 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  577      5F535452 
  577      55435400 
  578              	.LASF27:
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 14
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 14
 
 
  579 00d1 656E6162 		.ascii	"enableState\000"
@@ -816,41 +816,45 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 1
  591 018b 7369676E 		.ascii	"signed char\000"
  591      65642063 
  591      68617200 
- 592              	.LASF21:
- 593 0197 50574D5F 		.ascii	"PWM_1_Wakeup\000"
- 593      315F5761 
- 593      6B657570 
- 593      00
- 594              	.LASF26:
- 595 01a4 433A5C55 		.ascii	"C:\\Users\\ivddo\\OneDrive\\dcmotor\\Design02.cydsn"
- 595      73657273 
- 595      5C697664 
- 595      646F5C4F 
- 595      6E654472 
- 596 01d2 00       		.ascii	"\000"
- 597              	.LASF25:
- 598 01d3 47656E65 		.ascii	"Generated_Source\\PSoC4\\PWM_1_PM.c\000"
- 598      72617465 
- 598      645F536F 
- 598      75726365 
- 598      5C50536F 
- 599              	.LASF15:
- 600 01f5 6C6F6E67 		.ascii	"long double\000"
- 600      20646F75 
- 600      626C6500 
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccK9LHTG.s 			page 15
+ 592              	.LASF15:
+ 593 0197 6C6F6E67 		.ascii	"long double\000"
+ 593      20646F75 
+ 593      626C6500 
+ 594              	.LASF21:
+ 595 01a3 50574D5F 		.ascii	"PWM_1_Wakeup\000"
+ 595      315F5761 
+ 595      6B657570 
+ 595      00
+ 596              	.LASF25:
+ 597 01b0 47656E65 		.ascii	"Generated_Source\\PSoC4\\PWM_1_PM.c\000"
+ 597      72617465 
+ 597      645F536F 
+ 597      75726365 
+ 597      5C50536F 
+ 598              	.LASF16:
+ 599 01d2 73697A65 		.ascii	"sizetype\000"
+ 599      74797065 
+ 599      00
+ 600              	.LASF20:
+ 601 01db 50574D5F 		.ascii	"PWM_1_Sleep\000"
+ 601      315F536C 
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\cc0x8nmn.s 			page 15
 
 
- 601              	.LASF20:
- 602 0201 50574D5F 		.ascii	"PWM_1_Sleep\000"
- 602      315F536C 
- 602      65657000 
- 603              	.LASF2:
- 604 020d 73686F72 		.ascii	"short int\000"
- 604      7420696E 
- 604      7400
- 605              	.LASF16:
- 606 0217 73697A65 		.ascii	"sizetype\000"
- 606      74797065 
- 606      00
+ 601      65657000 
+ 602              	.LASF2:
+ 603 01e7 73686F72 		.ascii	"short int\000"
+ 603      7420696E 
+ 603      7400
+ 604              	.LASF26:
+ 605 01f1 433A5C55 		.ascii	"C:\\Users\\Bogdan\\Documents\\poc_roboarm_project\\"
+ 605      73657273 
+ 605      5C426F67 
+ 605      64616E5C 
+ 605      446F6375 
+ 606 021f 7365636F 		.ascii	"second_part\\Design02.cydsn\000"
+ 606      6E645F70 
+ 606      6172745C 
+ 606      44657369 
+ 606      676E3032 
  607              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

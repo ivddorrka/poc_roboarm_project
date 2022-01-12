@@ -1,3 +1,3 @@
-# Component constraints for C:\Users\ivddo\OneDrive\dcmotor\Design02.cydsn\TopDesign\TopDesign.cysch
-# Project: C:\Users\ivddo\OneDrive\dcmotor\Design02.cydsn\Design02.cyprj
-# Date: Sat, 18 Dec 2021 12:08:33 GMT
+# Component constraints for C:\Users\Bogdan\Documents\poc_roboarm_project\second_part\Design02.cydsn\TopDesign\TopDesign.cysch
+# Project: C:\Users\Bogdan\Documents\poc_roboarm_project\second_part\Design02.cydsn\Design02.cyprj
+# Date: Mon, 10 Jan 2022 18:30:47 GMT

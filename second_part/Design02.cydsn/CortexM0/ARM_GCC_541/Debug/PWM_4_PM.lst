@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
   28:Generated_Source\PSoC4/PWM_4_PM.c **** * Summary:
   29:Generated_Source\PSoC4/PWM_4_PM.c **** *  All configuration registers are retention. Nothing to save here.
   30:Generated_Source\PSoC4/PWM_4_PM.c **** *
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 2
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 2
 
 
   31:Generated_Source\PSoC4/PWM_4_PM.c **** * Parameters:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
   53              		.cfi_offset 4, -8
   54              		.cfi_offset 14, -4
   60:Generated_Source\PSoC4/PWM_4_PM.c ****     if(0u != (PWM_4_BLOCK_CONTROL_REG & PWM_4_MASK))
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 3
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 3
 
 
   55              		.loc 1 60 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
   77:Generated_Source\PSoC4/PWM_4_PM.c **** *
   78:Generated_Source\PSoC4/PWM_4_PM.c **** * Summary:
   79:Generated_Source\PSoC4/PWM_4_PM.c **** *  All configuration registers are retention. Nothing to restore here.
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 4
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 4
 
 
   80:Generated_Source\PSoC4/PWM_4_PM.c **** *
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  117              		.cfi_def_cfa_offset 8
  118              		.cfi_offset 4, -8
  119              		.cfi_offset 14, -4
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 5
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 5
 
 
  110:Generated_Source\PSoC4/PWM_4_PM.c ****     PWM_4_RestoreConfig();
@@ -288,7 +288,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  157 000c F3000000 		.4byte	.LASF24
  158 0010 0C       		.byte	0xc
  159 0011 70000000 		.4byte	.LASF25
- 160 0015 A0010000 		.4byte	.LASF26
+ 160 0015 F1010000 		.4byte	.LASF26
  161 0019 00000000 		.4byte	.Ldebug_ranges0+0
  162 001d 00000000 		.4byte	0
  163 0021 00000000 		.4byte	.Ldebug_line0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  167 0028 94010000 		.4byte	.LASF0
  168 002c 02       		.uleb128 0x2
  169 002d 01       		.byte	0x1
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 6
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 6
 
 
  170 002e 08       		.byte	0x8
@@ -306,7 +306,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  172 0033 02       		.uleb128 0x2
  173 0034 02       		.byte	0x2
  174 0035 05       		.byte	0x5
- 175 0036 DB010000 		.4byte	.LASF2
+ 175 0036 B5010000 		.4byte	.LASF2
  176 003a 02       		.uleb128 0x2
  177 003b 02       		.byte	0x2
  178 003c 07       		.byte	0x7
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  224 0093 08       		.byte	0x8
  225 0094 A0000000 		.4byte	.LASF13
  226 0098 04       		.uleb128 0x4
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 7
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 7
 
 
  227 0099 ED000000 		.4byte	.LASF14
@@ -370,11 +370,11 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  233 00a9 02       		.uleb128 0x2
  234 00aa 08       		.byte	0x8
  235 00ab 04       		.byte	0x4
- 236 00ac CF010000 		.4byte	.LASF15
+ 236 00ac A0010000 		.4byte	.LASF15
  237 00b0 02       		.uleb128 0x2
  238 00b1 04       		.byte	0x4
  239 00b2 07       		.byte	0x7
- 240 00b3 17020000 		.4byte	.LASF16
+ 240 00b3 AC010000 		.4byte	.LASF16
  241 00b7 06       		.uleb128 0x6
  242 00b8 01       		.byte	0x1
  243 00b9 03       		.byte	0x3
@@ -388,12 +388,12 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  251 00ca 00       		.byte	0
  252 00cb 00       		.byte	0
  253 00cc 08       		.uleb128 0x8
- 254 00cd 03020000 		.4byte	.LASF17
+ 254 00cd DD010000 		.4byte	.LASF17
  255 00d1 03       		.byte	0x3
  256 00d2 24       		.byte	0x24
  257 00d3 B7000000 		.4byte	0xb7
  258 00d7 09       		.uleb128 0x9
- 259 00d8 E5010000 		.4byte	.LASF18
+ 259 00d8 BF010000 		.4byte	.LASF18
  260 00dc 01       		.byte	0x1
  261 00dd 26       		.byte	0x26
  262 00de 00000000 		.4byte	.LFB2
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  281 010c 01       		.byte	0x1
  282 010d 58       		.byte	0x58
  283 010e 00000000 		.4byte	.LFB4
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 8
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 8
 
 
  284 0112 02000000 		.4byte	.LFE4-.LFB4
@@ -451,8 +451,8 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  311 0151 03       		.byte	0x3
  312 0152 3301     		.2byte	0x133
  313 0154 0D       		.uleb128 0xd
- 314 0155 F6010000 		.4byte	.LASF23
- 315 0159 F6010000 		.4byte	.LASF23
+ 314 0155 D0010000 		.4byte	.LASF23
+ 315 0159 D0010000 		.4byte	.LASF23
  316 015d 03       		.byte	0x3
  317 015e 3101     		.2byte	0x131
  318 0160 00       		.byte	0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  338 0011 00       		.byte	0
  339 0012 00       		.byte	0
  340 0013 02       		.uleb128 0x2
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 9
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 9
 
 
  341 0014 24       		.uleb128 0x24
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  395 004a 07       		.uleb128 0x7
  396 004b 0D       		.uleb128 0xd
  397 004c 00       		.byte	0
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 10
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 10
 
 
  398 004d 03       		.uleb128 0x3
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  452 0084 0E       		.uleb128 0xe
  453 0085 3A       		.uleb128 0x3a
  454 0086 0B       		.uleb128 0xb
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 11
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 11
 
 
  455 0087 3B       		.uleb128 0x3b
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  509 00c0 05       		.uleb128 0x5
  510 00c1 00       		.byte	0
  511 00c2 00       		.byte	0
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 12
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 12
 
 
  512 00c3 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  553      00
  554              	.LASF28:
  555 002e 50574D5F 		.ascii	"PWM_4_backup\000"
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 13
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 13
 
 
  555      345F6261 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  578              	.LASF12:
  579 00da 646F7562 		.ascii	"double\000"
  579      6C6500
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 14
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 14
 
 
  580              	.LASF20:
@@ -814,43 +814,47 @@ ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 1
  591 0194 7369676E 		.ascii	"signed char\000"
  591      65642063 
  591      68617200 
- 592              	.LASF26:
- 593 01a0 433A5C55 		.ascii	"C:\\Users\\ivddo\\OneDrive\\dcmotor\\Design02.cydsn"
- 593      73657273 
- 593      5C697664 
- 593      646F5C4F 
- 593      6E654472 
- 594 01ce 00       		.ascii	"\000"
- 595              	.LASF15:
- 596 01cf 6C6F6E67 		.ascii	"long double\000"
- 596      20646F75 
- 596      626C6500 
- 597              	.LASF2:
- 598 01db 73686F72 		.ascii	"short int\000"
- 598      7420696E 
- 598      7400
- 599              	.LASF18:
- 600 01e5 50574D5F 		.ascii	"PWM_4_SaveConfig\000"
- 600      345F5361 
- 600      7665436F 
- 600      6E666967 
- 600      00
- 601              	.LASF23:
- 602 01f6 50574D5F 		.ascii	"PWM_4_Enable\000"
- 602      345F456E 
-ARM GAS  C:\Users\ivddo\AppData\Local\Temp\ccsbE4jg.s 			page 15
+ 592              	.LASF15:
+ 593 01a0 6C6F6E67 		.ascii	"long double\000"
+ 593      20646F75 
+ 593      626C6500 
+ 594              	.LASF16:
+ 595 01ac 73697A65 		.ascii	"sizetype\000"
+ 595      74797065 
+ 595      00
+ 596              	.LASF2:
+ 597 01b5 73686F72 		.ascii	"short int\000"
+ 597      7420696E 
+ 597      7400
+ 598              	.LASF18:
+ 599 01bf 50574D5F 		.ascii	"PWM_4_SaveConfig\000"
+ 599      345F5361 
+ 599      7665436F 
+ 599      6E666967 
+ 599      00
+ 600              	.LASF23:
+ 601 01d0 50574D5F 		.ascii	"PWM_4_Enable\000"
+ 601      345F456E 
+ 601      61626C65 
+ 601      00
+ 602              	.LASF17:
+ARM GAS  C:\Users\Bogdan\AppData\Local\Temp\ccXYelWj.s 			page 15
 
 
- 602      61626C65 
- 602      00
- 603              	.LASF17:
- 604 0203 50574D5F 		.ascii	"PWM_4_BACKUP_STRUCT\000"
- 604      345F4241 
- 604      434B5550 
- 604      5F535452 
- 604      55435400 
- 605              	.LASF16:
- 606 0217 73697A65 		.ascii	"sizetype\000"
- 606      74797065 
- 606      00
+ 603 01dd 50574D5F 		.ascii	"PWM_4_BACKUP_STRUCT\000"
+ 603      345F4241 
+ 603      434B5550 
+ 603      5F535452 
+ 603      55435400 
+ 604              	.LASF26:
+ 605 01f1 433A5C55 		.ascii	"C:\\Users\\Bogdan\\Documents\\poc_roboarm_project\\"
+ 605      73657273 
+ 605      5C426F67 
+ 605      64616E5C 
+ 605      446F6375 
+ 606 021f 7365636F 		.ascii	"second_part\\Design02.cydsn\000"
+ 606      6E645F70 
+ 606      6172745C 
+ 606      44657369 
+ 606      676E3032 
  607              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

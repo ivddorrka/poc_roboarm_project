@@ -1,268 +1,98 @@
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Clock_1.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_1.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_1.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/main.o : C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Clock_1.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Clock_2.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Clock_3.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Clock_4.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/CyDMA.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/PWM_1.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/PWM_2.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/PWM_3.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/PWM_4.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1_aliases.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2_aliases.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3_aliases.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4_aliases.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_RED.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_RED_aliases.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_aliases.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_int.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01_aliases.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02_aliases.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03_aliases.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04_aliases.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cmsis_armcc.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cmsis_compiler.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cmsis_gcc.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/core_cm0.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cyPm.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cy_em_eeprom.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cydisabledsheets.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/project.h C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/main.c 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_1.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Clock_1.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_1.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Clock_2.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Clock_3.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Clock_4.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/CyDMA.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Clock_2.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_2.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_2.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/CyFlash.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_2.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_2.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/CyLib.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Clock_3.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_3.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_3.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/PWM_1.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_3.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/PWM_2.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_3.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/PWM_3.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Clock_4.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_4.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_4.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/PWM_4.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_4.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_4.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1_aliases.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Cm0Start.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Cm0Start.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/cyapicallbacks.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Cm0Start.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2_aliases.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3_aliases.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/cyapicallbacks.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4_aliases.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/CyDMA.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyDMA.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyDMA.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_RED.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyDMA.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_RED_aliases.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyDMA.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/CyFlash.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyFlash.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_aliases.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyFlash.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_int.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyFlash.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/CyLFClk.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01_aliases.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/CyLib.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02_aliases.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/PWM_1.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_1.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_1.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03_aliases.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_1.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_1.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04_aliases.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/PWM_1_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_1.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_1_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cmsis_armcc.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_1_PM.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cmsis_compiler.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/PWM_2.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_2.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_2.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cmsis_gcc.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_2.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/core_cm0.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_2.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/PWM_2_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_2.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_2_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cyPm.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_2_PM.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cy_em_eeprom.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/PWM_3.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_3.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_3.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_3.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cydisabledsheets.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_3.h : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/PWM_3_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_3.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_3_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_3_PM.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cypins.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/PWM_4.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_4.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_4.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/cytypes.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_4.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/Generated_Source/PSoC4/project.h : 
 
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_4.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/PWM_4_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_4.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_4_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_4_PM.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_PairLine1.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1_aliases.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_PairLine1_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1_PM.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_PairLine2.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2_aliases.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_PairLine2_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2_PM.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_PairLine3.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3_aliases.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_PairLine3_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3_PM.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_PairLine4.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4_aliases.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_PairLine4_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4_PM.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_RED.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_RED.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_RED.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_RED_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_RED.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_RED.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_RED_aliases.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_RED_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_RED.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_RED_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_RED_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_RED_PM.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_SW2.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_aliases.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_SW2_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_PM.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_SW2_int.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_int.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_int.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/cyapicallbacks.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_int.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_int.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_pair01.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01_aliases.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_pair01_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01_PM.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_pair02.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02_aliases.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_pair02_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02_PM.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_pair03.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03_aliases.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_pair03_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03_PM.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_pair04.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04_aliases.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_pair04_PM.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04_PM.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04_PM.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/cyPm.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyPm.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyPm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyPm.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyPm.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/cy_em_eeprom.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cy_em_eeprom.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cy_em_eeprom.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cy_em_eeprom.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cy_em_eeprom.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/cyfitter_cfg.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/cyapicallbacks.h 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/cyutils.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyutils.c 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyutils.c : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/CortexM0/ARM_GCC_541/Debug/main.o : C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cmsis_armcc.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cmsis_compiler.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cmsis_gcc.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/core_cm0.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydisabledsheets.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/project.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_1.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_2.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_3.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Clock_4.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyDMA.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_1.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_2.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_3.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/PWM_4.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine1_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine2_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine3_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_PairLine4_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_RED.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_RED_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_SW2_int.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair01_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair02_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair03_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/Pin_pair04_aliases.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyPm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cy_em_eeprom.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/main.c 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cmsis_armcc.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cmsis_compiler.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cmsis_gcc.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/core_cm0.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/cydisabledsheets.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/Generated_Source/PSoC4/project.h : 
-
-C:/Users/ivddo/OneDrive/dcmotor/Design02.cydsn/main.c : 
+C:/Users/Bogdan/Documents/poc_roboarm_project/second_part/Design02.cydsn/main.c : 
 
