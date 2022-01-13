@@ -1,0 +1,9 @@
+C:\Users\ivddo\OneDrive\dcmotor\Design01.cydsn\Design01.cyprj|ce8a14c9-fe45-4987-8fd5-025bde751e4e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|cb78fdb7-1ac7-4bb3-b6fc-677fbbc2b119
+C:\Users\ivddo\OneDrive\Документы\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|e32dc596-8a87-4727-b8cf-ca0c40842fa4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|de42533e-1b90-40f7-a864-175619f99ee2
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|a1b2e4a5-af8d-484c-a57e-4765c58dca44
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|5d144096-d9ad-4077-a30b-7d9bf15da5a7
+C:\Users\ivddo\OneDrive\dcmotor\Design02.cydsn\Design02.cyprj|84b8e83e-58ab-4f45-9a24-1a94af43c3be
+C:\Users\ivddo\OneDrive\dcmotor\Design03.cydsn\Design03.cyprj|656d7d02-bfbb-4709-914f-96105c356c54
+C:\Users\ivddo\OneDrive\dcmotor\Design04.cydsn\Design04.cyprj|fc1ca7b0-b2a6-40b1-9982-a210fad51870
