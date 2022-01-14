@@ -329,7 +329,7 @@ int main(void)
                 UART_UartPutChar('\n');
                 UART_UartPutChar('\r');
         }
-        if (ch != prevChar && ch != 0u){
+        if (ch != 0u){
             prevChar = ch;
        
             if (ch == 'L'){
