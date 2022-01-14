@@ -319,46 +319,30 @@ int main(void)
     UART_UartPutString("What would you like to do? \n\r");
     
     uint8 ch;
-    char prevChar = 'w';
     
     for(;;)
     {
         ch = UART_UartGetChar();
-        if (0u != ch){
-                UART_UartPutChar(ch);
-                UART_UartPutChar('\n');
-                UART_UartPutChar('\r');
-        }
-        if (ch != 0u){
-            prevChar = ch;
-       
+        if (ch != 0u){       
             if (ch == 'L'){
                 oneServoAlgo(30, 0, 4);
                 UART_UartPutChar('L');
-                UART_UartPutChar('\n');
-                UART_UartPutChar('\r');
                 
                 
             }
             if (ch == 'R'){
                 oneServoAlgo(30, 1, 4);
                 UART_UartPutChar('R');
-                UART_UartPutChar('\n');
-                UART_UartPutChar('\r');
             }
             if (ch == 'D'){
                 oneServoAlgo(30, 0, 3);
                 UART_UartPutChar('D');
-                UART_UartPutChar('\n');
-                UART_UartPutChar('\r');
                
             }
             if (ch == 'U'){
                 
                 oneServoAlgo(30, 1, 3);
                 UART_UartPutChar('U');
-                UART_UartPutChar('\n');
-                UART_UartPutChar('\r');
                 
                 
             }
@@ -366,17 +350,12 @@ int main(void)
                
                 oneServoAlgo(30, 0, 1);
                 UART_UartPutChar('O');
-                UART_UartPutChar('\n');
-                UART_UartPutChar('\n');
-                UART_UartPutChar('\r');
                 
             }
             if (ch == 'C'){
                 
                 oneServoAlgo(30, 1, 1);
                 UART_UartPutChar('C');
-                UART_UartPutChar('\n');
-                UART_UartPutChar('\r');
                 
                
             }
@@ -384,25 +363,22 @@ int main(void)
                
                 oneServoAlgo(30, 0, 2);
                 UART_UartPutChar('B');
-                UART_UartPutChar('\n');
-                UART_UartPutChar('\r');
                 
             }
             if (ch == 'A'){
                
                 oneServoAlgo(30, 1, 2);
-                UART_UartPutChar('B');
-                UART_UartPutChar('\n');
-                UART_UartPutChar('\r');
+                UART_UartPutChar('A');
                 
             }
             if (ch == 'F'){
                 
                 algo();
                 UART_UartPutChar('F');
-                UART_UartPutChar('\n');
-                UART_UartPutChar('\r');
+                
             }
+            UART_UartPutChar('\n');
+            UART_UartPutChar('\r');
             
         }
 
