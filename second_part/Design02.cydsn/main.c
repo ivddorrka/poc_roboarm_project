@@ -154,6 +154,23 @@ void algo() {
     
 }
 
+void oneServoAlgo(int spd, int dir, int servo){
+    int speed[] = {0, 0, 0, 0};
+    int a = servo - 1;
+    speed[a] = spd;
+    
+    int direction[] = {1, 0, 0, 1};
+    if (dir==0){
+        int direction[] = {0, 0, 0, 0};
+    }
+    if (dir==1){
+        int direction[] = {1, 1, 1, 1};
+    }
+    move( speed, direction, 100, 100);
+    CyDelay(2000);
+    
+
+}
 CY_ISR( Pin_SW2_Handler){
 
     algo();
@@ -196,35 +213,32 @@ int main(void)
             prevChar = ch;
        
             if (ch == 'L'){
-                speed[3] = 30;
-                move(speed, direction_forward, 500, 500);
+                oneServoAlgo(30, 0, 4);
                 UART_UartPutChar('L');
                 UART_UartPutChar('\n');
-                speed[3] = 0;
+                
                 
             }
             if (ch == 'R'){
                // move_servo(100, 100, 10, 1, 4);
-                speed[3] = 30;
-                move(speed, direction_backward, 500, 500);
-                
+               /* speed[3] = 30;
+                move(speed, direction_backward, 500, 500);*/
+                oneServoAlgo(30, 1, 4);
                 UART_UartPutChar('R');
                 UART_UartPutChar('\n');
-                speed[3] = 0;
+                //speed[3] = 0;
             }
             if (ch == 'D'){
-                speed[2] = 30;
-                move(speed, direction_forward, 500, 500);
                 
                 //move_servo(100, 100, 10, 0, 3);
+                oneServoAlgo(30, 0, 3);
                 UART_UartPutChar('D');
                 UART_UartPutChar('\n');
-                speed[2] = 0;
+               
             }
             if (ch == 'U'){
-                speed[2] = 30;
-                move(speed, direction_backward, 500, 500);
                 
+                oneServoAlgo(30, 1, 3);
                 //move_servo(100, 100, 10, 1, 3);
                 UART_UartPutChar('U');
                 UART_UartPutChar('\n');
@@ -232,33 +246,30 @@ int main(void)
                 
             }
             if (ch == 'O'){
-                speed[0] = 30;
-                move(speed, direction_forward, 500, 500);
-                
+               
+                oneServoAlgo(30, 0, 1);
                 //move_servo(100, 100, 10, 0, 1);
                 UART_UartPutChar('O');
                 UART_UartPutChar('\n');
-                speed[0] = 0;
+               
                 
             }
             if (ch == 'C'){
-                speed[0] = 30;
-                move(speed, direction_backward, 500, 500);
                 
+                oneServoAlgo(30, 1, 1);
                 //move_servo(100, 100, 10, 1, 1);
                 UART_UartPutChar('C');
                 UART_UartPutChar('\n');
-                speed[0] = 0;
+                
                
             }
             if (ch == 'B'){
-                speed[2] = 30;
-                move(speed, direction_forward, 500, 500);
-                
+               
+                oneServoAlgo(30, 0, 3);
                 //move_servo(100, 100, 10, 0, 3);
                 UART_UartPutChar('B');
                 UART_UartPutChar('\n');
-                speed[2] = 0;
+               
                 
             }
             if (ch == 'F'){
@@ -268,14 +279,8 @@ int main(void)
                 UART_UartPutChar('\n');
             }
             
-            /*for (int i = 1; i <= 4; i++) {
-                speed[i] = 0;
-            }*/
         }
-       
-        /*for (int i = 1; i <= 4; i++) {
-        stop_servo(i);
-       }*/
+
     }
     
     
