@@ -268,28 +268,128 @@ void algo_jengu() {
     
 }
 
+void oneServoAlgo(int spd, int dir, int serv){
+    int speed[] = {0, 0, 0, 0};
+    speed[serv-1] = spd;
+    int direction_forward[] = {0, 0, 0, 0};
+    int direction_backward[] = {1, 1, 1, 1};
+    if ( dir == 0){
+        move(speed, direction_forward, 300, 100);
+    }else{
+        move(speed, direction_backward, 300, 100);
+    }
+    
+    CyDelay(100);
 
+    for (int i = 0; i < 4; i++) {
+        speed[i] = 0;
+    }
+       
+    move(speed, direction_backward, 3000, 1000);
+    //CyDelay(100);
+       
+}
 CY_ISR( Pin_SW2_Handler){
-    
 
-
-    algo_oreo();
-           
-    
+    algo();
     Pin_SW2_ClearInterrupt();
     
 }
 
-
 int main(void)
 {
     CyGlobalIntEnable; 
-
+    
+    int speed[] = {0, 0, 0, 0};
+    int direction_forward[] = {0, 0, 0, 0};
+    int direction_backward[] = {1, 1, 1, 1};
     Pin_SW2_int_StartEx( Pin_SW2_Handler );
+    UART_Start();
+    
+    UART_UartPutString("There are such options: \n\r");
+    UART_UartPutString("L is for - turn left \n\r");
+    UART_UartPutString("R is for - turn right \n\r");
+    UART_UartPutString("D is for - turn down \n\r");
+    UART_UartPutString("U is for - turn up \n\r");
+    UART_UartPutString("O is for - open up \n\r");
+    UART_UartPutString("C is for - close \n\r");
+    UART_UartPutString("B is for - bend \n\r");
+    UART_UartPutString("F is for - run default algorithm \n\r");
+    UART_UartPutString("What would you like to do? \n\r");
+    
+    uint8 ch;
+    char prevChar = 'w';
     
     for(;;)
     {
-        
+        ch = UART_UartGetChar();
+        if (0u != ch){
+                UART_UartPutChar(ch);
+                UART_UartPutChar('\n');
+        }
+        if (ch != prevChar && ch != 0u){
+            prevChar = ch;
+       
+            if (ch == 'L'){
+                oneServoAlgo(30, 0, 4);
+                UART_UartPutChar('L');
+                UART_UartPutChar('\n');
+                
+                
+            }
+            if (ch == 'R'){
+                oneServoAlgo(30, 1, 4);
+                UART_UartPutChar('R');
+                UART_UartPutChar('\n');
+            }
+            if (ch == 'D'){
+                oneServoAlgo(30, 0, 3);
+                UART_UartPutChar('D');
+                UART_UartPutChar('\n');
+               
+            }
+            if (ch == 'U'){
+                
+                oneServoAlgo(30, 1, 3);
+                //move_servo(100, 100, 10, 1, 3);
+                UART_UartPutChar('U');
+                UART_UartPutChar('\n');
+                speed[2] = 0;
+                
+            }
+            if (ch == 'O'){
+               
+                oneServoAlgo(30, 0, 1);
+                UART_UartPutChar('O');
+                UART_UartPutChar('\n');
+                
+                
+            }
+            if (ch == 'C'){
+                
+                oneServoAlgo(30, 1, 1);
+                UART_UartPutChar('C');
+                UART_UartPutChar('\n');
+                
+               
+            }
+            if (ch == 'B'){
+               
+                oneServoAlgo(30, 0, 3);
+                UART_UartPutChar('B');
+                UART_UartPutChar('\n');
+               
+                
+            }
+            if (ch == 'F'){
+                
+                algo();
+                UART_UartPutChar('F');
+                UART_UartPutChar('\n');
+            }
+            
+        }
+
     }
     
     
