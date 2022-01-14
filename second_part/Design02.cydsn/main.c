@@ -1,6 +1,7 @@
 #include "project.h"
 
 
+
 void control_direction(int speed_percent, int direction, int num_servo) {
     uint8 pin_val = 0;
     if (direction == 0) {
@@ -110,6 +111,7 @@ void move(int speed[], int direction[], int time_to_work, int time_break) {
 }
 
 void algo() {
+    
     int speed[] = {20, 20, 20, 20};
     int direction_forward[] = {0, 0, 0, 0};
     int direction_backward[] = {1, 1, 1, 1};
@@ -148,10 +150,14 @@ void algo() {
     CyDelay(100);
     
     
-    
-    
 }
 
+CY_ISR( Pin_SW2_Handler){
+
+    algo();
+    Pin_SW2_ClearInterrupt();
+    
+}
 
 int main(void)
 {
@@ -160,57 +166,56 @@ int main(void)
     int speed[] = {20, 20, 20, 20};
     int direction_forward[] = {0, 0, 0, 0};
     int direction_backward[] = {1, 1, 1, 1};
-
+    Pin_SW2_int_StartEx( Pin_SW2_Handler );
+    UART_Start();
+    
+    UART_UartPutString("There are 4 options: \n\r");
+    UART_UartPutString("L is for - turn left \n\r");
+    UART_UartPutString("R is for - turn right \n\r");
+    UART_UartPutString("D is for - turn down \n\r");
+    UART_UartPutString("U is for - turn up \n\r");
+    UART_UartPutString("O is for - open up \n\r");
+    UART_UartPutString("C is for - close \n\r");
+    UART_UartPutString("B is for - bend \n\r");
+    UART_UartPutString("F is for - run default algorithm \n\r");
+    UART_UartPutString("What would you like to do? \n\r");
+    
+    uint8 ch;
+    
     for(;;)
     {
-        algo();
+        ch = UART_UartGetChar();
         
-        /*
-        move(speed, direction_forward, 3000, 1000);
-        CyDelay(1000);
-        //speed = {20, 0, 0, 0};
-        move_servo(3000, 1000, 20, 1, 1);
-        CyDelay(1000);
-        
-        //speed[0] = 0;
-        //move(speed, direction_backward, 2000, 1000);
-        //CyDelay(1000);
-        //move_servo(1000, 1000, 20, 0, 1);
-        //CyDelay(1000);
-        //move(speed, direction_backward, 2000, 1000);
-        //CyDelay(1000);
-        //speed[0] = 20;
-        move(speed, direction_backward, 5000, 1000);
-        CyDelay(1000);*/
-        
-        //algo();
-        
-        /*
-        move(speed, direction_forward, 3000, 2000);
-        speed[1] = 0;
-        speed[2] = 0;
-        speed[3] = 0;
-        CyDelay(100);
-        
-        move(speed, direction_backward, 3000, 2000);
-        CyDelay(100);
-        move(speed, direction_forward, 3000, 2000);
-        CyDelay(100);
-        
-        speed[1] = 20;
-        speed[2] = 20;
-        speed[3] = 20;
-        CyDelay(100);
-        
-        move(speed, direction_backward, 4000, 2000);
-        CyDelay(100);
-        */
-        
-        //move(speed, direction_backward, 4000, 2000);
-     
-        
-        //move_servo(500, 1000, 20, 1, 4); // close the hand
-
+        if (0u != ch){
+            UART_UartPutChar(ch);
+            UART_UartPutChar('\n');
+        }
+        if (ch == 'L'){
+            move_servo(100, 100, 30, 0, 4);
+        }
+        if (ch == 'R'){
+            move_servo(100, 100, 30, 1, 4);
+        }
+        if (ch == 'D'){
+            move_servo(100, 100, 30, 0, 3);
+        }
+        if (ch == 'U'){
+            move_servo(100, 100, 30, 1, 3);
+        }
+        if (ch == 'O'){
+            move_servo(100, 100, 30, 0, 1);
+        }
+        if (ch == 'C'){
+            move_servo(100, 100, 30, 1, 1);
+        }
+        if (ch == 'B'){
+            move_servo(100, 100, 30, 0, 3);
+        }
+        if (ch == 'F'){
+            algo();
+        }
     }
+    
+    
 
 }
