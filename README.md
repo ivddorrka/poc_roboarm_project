@@ -46,62 +46,22 @@
 </details>
 
 
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-This project is designed to show information about cosmetics and how safe they are.
-The program creates a telegram bot. To use it, user need to send the photo of the composition of ingredients of a cosmetics product. Then he/she receives data about the safety of those ingredients and (if one wants) additional information about them.
-
-The self-care industry is expanding, there are many self-care products that billions of people use every day. However, there is lack of people who has enough knowledge in the field to understand how each component of the product can effect one's health. Manufacturers can use this defect and use the ingredients that are beneficial to business and not to human health.
-
-Our aim is to make the using of cosmetic products as safe as possible by providing the service with an access to the inforamtion about the ingredients and protect the health of everyone who uses it.
-
-To try it, find the @CosmeticsConsistensionBot in Telegram yourself.
+# The robo-arm project 
+### Based on Psoc 4 microcontroller and splitted into two parts - first is based on steppers in use and the other one is with the dc-motors. 
 
 
+## Work so far
 
-### Built With
+Each motor can be controlled via UART, which direction to choose and what exactly should be done 
+There is the link to the presentation containing the videos of algorithms and an example how the uart works.
 
-* [TelegramAPI](https://core.telegram.org)
-* [GOOGLE-Cloud-Vision](https://cloud.google.com/vision)
-* [Pandas](https://pandas.pydata.org)
-* [OS](https://docs.python.org/3/library/os.path.html)
+As well as uart work there're also two algorithms present which can be set up to go by the press of the button on the microcontroller. Currently the easy one defaul algorithms is set to go as soon as the button will be pressed. 
 
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-To get the information about the ingredients of the cosmetic product, the user needs to send the command /sendphoto to the @CosmeticsConsistensionBot, the bot will answer that it is ready to take a photo. Then the user needs to send a photo of the composition of the product. With the google cloud vision, the program recognizes the text from the photo and checks if the are any prohibited ingredients among the components. If yes, the bot notifies the user. Then the bot asks if the user wants to know more about all the ingredients that were found in the composition. If the user clicks no, work with the photo ends. If the user clicks yes, the bot sends a conclusion on the ingredients from the CIR expert panel (https://cir-safety.org/about)and work with the photo is ends.
-
-More detailed manual you will find in telegram bot.
-
-See how the bot works in telegram. Go to the @CosmeticsConsistensionBot (https://t.me/CosmeticsConsistensionBot) and send a command /sendphoto
-
-![image](https://user-images.githubusercontent.com/69758108/118395266-0016cd80-b652-11eb-8600-76270312a25d.png) ![image](https://user-images.githubusercontent.com/69758108/118395292-250b4080-b652-11eb-9455-1a9043c2d8c9.png)
-
-
-
-## Roadmap
-
-See the [open issues](https://github.com/ivddorrka/poc_roboarm_project/issues) for a list of proposed features (and known issues).
-
-
-
-## License
-
-Distributed under the MIT License. See [LICENCE](https://github.com/ivddorrka/poc_roboarm_project/blob/master/LICENSE) for more information.
-
-
-
-## Feel free to contact
-
-We are open to improvements in our project. If you have any ideas or you are ready to help, contact us!
-
-Facebook: [Facebook account to write](https://www.facebook.com/profile.php?id=100007232269167)
-
-Project Link: [https://github.com/normangalt/Cosmetics-Check](https://github.com/normangalt/Cosmetics-Check)
-
+* As was already said - there is a serial communication therefore you need any serial terminal we're using Tera Term. 
+* Psoc creator as well to run the project 
+* All of the connections are shown on the photos on the Readme in the second part
 
 
 ## Credits
@@ -110,19 +70,3 @@ Project Link: [https://github.com/normangalt/Cosmetics-Check](https://github.com
 * [Bohdan Shevchuk](https://github.com/shevdan)
 * [Daria Kuzmina](https://github.com/ivddorrka)
 
-
-
-
-
-[contributors-shield]: https://img.shields.io/github/contributors/ivddorrka/poc_roboarm_project.svg?style=for-the-badge
-[contributors-url]: https://github.com/ivddorrka/poc_roboarm_project/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ivddorrka/poc_roboarm_project.svg?style=for-the-badge
-[forks-url]: https://github.com/ivddorrka/poc_roboarm_project/network/members
-[stars-shield]: https://img.shields.io/github/stars/ivddorrka/poc_roboarm_project.svg?style=for-the-badge
-[stars-url]: https://github.com/ivddorrka/poc_roboarm_project/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ivddorrka/poc_roboarm_project.svg?style=for-the-badge
-[issues-url]: https://github.com/ivddorrka/poc_roboarm_project/issues
-[license-shield]: https://img.shields.io/github/license/ivddorrka/poc_roboarm_project.svg?style=for-the-badge
-[license-url]: https://github.com/ivddorrka/poc_roboarm_project/blob/master/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/yaroslav-brovchenko-247477205/
